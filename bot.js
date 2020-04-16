@@ -145,7 +145,7 @@ function controlMessage(message){
 	//TODO: Should substitute forEach with for (const [triggers, oneFastAnswer] of Object.entries(fastAnswers)), in order to use return inside the loop
 	fastAnswers.forEach(function(fastAnswer){ //For every fast answer
 		fastAnswer.triggers.forEach(function(trigger){ //Check among all triggers
-			let regex = new XRegExp("\\b" + trigger + "\\b", "gui");//Search global and case insenstive
+			let regex = new XRegExp(trigger, "gui");//Search global and case insenstive
 			let regexResult = message.match(regex);
 			
 		    //console.log("Regex result: " + regexResult);
