@@ -66,7 +66,7 @@ function fillPrizesTable(values) {
 
 // Submit highscore to Telegram
 var xmlhttp = new XMLHttpRequest();
-var url = "https://chittimicrobot.herokuapp.com/highscore/" + values + 
+var url = "https://chittimicrobot.herokuapp.com/highscore/" + prizes + 
     "?id=" + playerid;
 var sendingText = document.getElementById("sendingText");
 sendingText.style.display = "block";
