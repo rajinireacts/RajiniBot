@@ -1,0 +1,41 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "A simple little framework to create an autoresponder bot for telegram.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xfox1/telegrambotautoresponder.git"
+  },
+  "keywords": [
+    "telegram",
+    "framework",
+    "bot",
+    "autoresponder"
+  ],
+  "author": "Antonio Mignano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xfox1/telegrambotautoresponder/issues"
+  },
+  "homepage": "https://github.com/Xfox1/telegrambotautoresponder#readme",
+  "dependencies": {
+    "accept-language": "^3.0.18",
+    "detectlanguage": "^1.2.2",
+    "dotenv": "^7.0.0",
+    "express": "^4.17.1",
+    "firebase": "^7.13.2",
+    "i18n": "^0.8.6",
+    "node-telegram-bot-api": "^0.30.0",
+    "node-telegram-keyboard-wrapper": "^2.0.1",
+    "node-telegram-operation-manager": "^1.2.0",
+    "node-themoviedb": "^0.1.4",
+    "open-graph-scraper": "^3.6.2",
+    "request": "^2.88.2",
+    "xregexp": "^4.3.0"
+  }
+}

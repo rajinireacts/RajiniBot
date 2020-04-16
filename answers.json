@@ -1,0 +1,109 @@
+[
+  {
+        "triggers": [
+            "night",
+            "good night"
+        ],
+        "replies": [
+            {
+                "reply": "To you...",
+                "type": "text"
+            },
+            {
+                "reply": "It's time",
+                "type": "text"
+            },
+            {
+                "reply": "Where are you going? The night is still young!",
+                "type": "text"
+            }
+        ]
+    },
+    {
+      "triggers": [
+        "annamalai"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBKxel2gVA4p2oAjUo6517jXsCvH4hQACaBEAAh0xmVBMz0iR9NZ3TRgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "ha ha"
+      ],
+      "replies": [
+       {
+         "reply": "./media/images/party_girl.gif",
+         "type": "image"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "kazhugu",
+        "Anthuleni Katha",
+        "அந்துலேனி கதா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHRel1iq1iuQDzyPx2RQzHHBWAI8-gACoUoAApV2FAr5AALU1CM9vxgE",
+         "type": "video"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Moondru Mudichu",
+        "Moondru Mudichu",
+        "மூன்று முடிச்சு"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/ktKMzyLo93Q",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Baalu Jenu",
+        "Baalu Jenu",
+        "பாலு ஜேனு"
+      ],
+      "replies": [
+       {
+         "reply": "",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Avargal",
+        "Avargal",
+        "அவர்கள்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/4m5NKv1tY_U",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kavikuyil",
+        "Kavikuyil",
+        "கவிக்குயில்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/NaNUvMKK1RM",
+         "type": "text"
+       }
+      ]
+   }
+]
