@@ -380,7 +380,7 @@ function hasEntity(entity, entities) {
     bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   } else {
     queries[query.id] = query;
-    let gameurl = "https://chittimicrobot.herokuapp.com/index.html?  id="+query.id;
+    let gameurl = "https://chittimicrobot.herokuapp.com/index.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
       url: gameurl
@@ -397,7 +397,7 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 //high scores
 server.get("/highscore/:score", function(req, res, next) {
-  if (!Object.hasOwnProperty.call(queries, req.query.id)) return   next();
+  if (!Object.hasOwnProperty.call(queries, req.query.id)) return next();
   let query = queries[req.query.id];
   let options;
   if (query.message) {
