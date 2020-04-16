@@ -148,6 +148,8 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="functions.js"></script>
 		<script>
+			var url = new URL(location.href);
+var playerid = url.searchParams.get("id");
 			/*function fixPrizeHighlight(){
 				for (i = 0; i < 15; i++) {
 					if ((String(i+1))=="5"||(String(i+1))=="10"||(String(i+1))=="15") {
@@ -262,6 +264,18 @@
 				} else {
 					document.getElementById("footer").innerHTML = "Your win validation code is: "+JSON.stringify(validatecode)+"<br>"+sessionStorage.getItem("footertext");
 				};
+				// Submit highscore to Telegram
+var xmlhttp = new XMLHttpRequest();
+var url = "https://chittimicrobot.herokuapp.com/highscore/" + prizes + 
+    "?id=" + playerid;
+var sendingText = document.getElementById("sendingText");
+sendingText.style.display = "block";
+
+xmlhttp.onreadystatechange = function() {
+   sendingText.style.display = "none";
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
 			};
 			
 			function start(){
