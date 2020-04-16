@@ -1,3 +1,6 @@
+var url = new URL(location.href);
+var playerid = url.searchParams.get("id");
+
 function checkMobile() {
   if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     return "true";
@@ -60,3 +63,16 @@ function fillPrizesTable(values) {
   };
   var table = document.getElementById("prizestable");
 };
+
+// Submit highscore to Telegram
+var xmlhttp = new XMLHttpRequest();
+var url = "https://chittimicrobot.herokuapp.com/highscore/" + values + 
+    "?id=" + playerid;
+var sendingText = document.getElementById("sendingText");
+sendingText.style.display = "block";
+
+xmlhttp.onreadystatechange = function() {
+   sendingText.style.display = "none";
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
