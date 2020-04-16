@@ -1,5 +1,6 @@
 var url = new URL(location.href);
-var playerid = url.searchParams.get("id")
+var playerid = url.searchParams.get("id");
+
 // Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
@@ -469,12 +470,7 @@ var playerid = url.searchParams.get("id")
                     'from { width:' + Trex.config.WIDTH + 'px }' +
                     'to { width: ' + this.dimensions.WIDTH + 'px }' +
                     '}';
-                
-                // create a style sheet to put the keyframe rule in 
-                // and then place the style sheet in the html head    
-                var sheet = document.createElement('style');
-                sheet.innerHTML = keyframes;
-                document.head.appendChild(sheet);
+                document.styleSheets[0].insertRule(keyframes, 0);
 
                 this.containerEl.addEventListener(Runner.events.ANIM_END,
                     this.startGame.bind(this));
@@ -1601,7 +1597,7 @@ var playerid = url.searchParams.get("id")
             msPerFrame: 1000 / 60
         },
         DUCKING: {
-            frames: [264, 323],
+            frames: [262, 321],
             msPerFrame: 1000 / 8
         }
     };
@@ -2095,6 +2091,19 @@ var playerid = url.searchParams.get("id")
                 distance).substr(-this.maxScoreUnits);
 
             this.highScore = ['10', '11', ''].concat(highScoreStr.split(''));
+
+             // Submit highscore to Telegram
+             var xmlhttp = new XMLHttpRequest();
+             var url = "https://chittimicrobot.herokuapp.com/highscore/" + distance + 
+                 "?id=" + playerid;
+             var sendingText = document.getElementById("sendingText");
+             sendingText.style.display = "block";
+
+             xmlhttp.onreadystatechange = function() {
+                sendingText.style.display = "none";
+             };
+             xmlhttp.open("GET", url, true);
+             xmlhttp.send();
         },
 
         /**
@@ -2715,11 +2724,3 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
-
-
-// Submit highscore to Telegram
-var xmlhttp = new XMLHttpRequest();
-var url = "https://YOUR_URL_HERE/highscore/" + distance  +
-"?id=" + playerid;
-xmlhttp.open("GET", url, true);
-xmlhttp.send();

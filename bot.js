@@ -168,7 +168,7 @@ if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
 }
 var bye = "bye";
 if (msg.text.toString().toLowerCase().includes(bye)) {
-    bot.sendMessage(msg.chat.id, "Hope to see you around again , கவிக்குயில் " + msg.from.first_name);
+    bot.sendMessage(msg.chat.id, "Hope to see you athithia nesan around again , கவிக்குயில் " + msg.from.first_name);
 }    
 var robot = "athie";
 if (msg.text.indexOf(robot) === 0) {
@@ -370,8 +370,7 @@ function hasEntity(entity, entities) {
 
  // ---------- games ----------
 
- server.use(express.static(path.join(__dirname, 'public')));
- bot.onText(/help2/, (msg) => bot.sendMessage(msg.chat.id, "This bot implements a who wants to be a millionaire game. Say /game if you want to play."));
+  bot.onText(/help2/, (msg) => bot.sendMessage(msg.chat.id, "This bot implements a who wants to be a millionaire game. Say /game if you want to play."));
  bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName));
 
  //logic 
@@ -381,7 +380,7 @@ function hasEntity(entity, entities) {
     bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   } else {
     queries[query.id] = query;
-    let gameurl = "file:///C:/Users/Athithia%20Nesan/Desktop/telegrambotautoresponder-master/public/index.html?  id="+query.id;
+    let gameurl = "https://chittimicrobot.herokuapp.com/index.html?  id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
       url: gameurl
@@ -393,6 +392,8 @@ function hasEntity(entity, entities) {
 bot.on("inline_query", function(iq) {
   bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName } ] );
 });
+
+server.use(express.static(path.join(__dirname, 'public')));
 
 //high scores
 server.get("/highscore/:score", function(req, res, next) {
