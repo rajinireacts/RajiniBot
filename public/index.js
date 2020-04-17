@@ -2094,7 +2094,7 @@ var playerid = url.searchParams.get("id");
 
              // Submit highscore to Telegram
              var xmlhttp = new XMLHttpRequest();
-             var url = "https://trexgame.herokuapp.com/highscore/" + distance + 
+             var url = "https://chittimicrobot.herokuapp.com/highscore/" + distance + 
                  "?id=" + playerid;
              var sendingText = document.getElementById("sendingText");
              sendingText.style.display = "block";
