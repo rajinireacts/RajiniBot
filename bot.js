@@ -16,8 +16,8 @@ const express = require('express');
 const path = require("path");
 const server = express();
 const port = process.env.PORT || 5000;
-const gameName = "crorepati";
-const gameName2 = "RobotRunner";
+const gameName = "RobotRunner";
+const gameName2 = "crorepati";
 const queries = {};
 
 
@@ -394,7 +394,7 @@ bot.on("inline_query", function(iq) {
   bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName } ] );
 });
 
-server.use(express.static(path.join(__dirname, 'public')));
+server.use(express.static(path.join(__dirname, 'robotrunner')));
 
 //high scores
 server.get("/highscore/:score", function(req, res, next) {
@@ -438,7 +438,7 @@ bot.on("callback_query", function (query) {
 
 //inline behavior
 bot.on("inline_query", function(iq) {
-  bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName2 } ] );
+  bot.answerInlineQuery(iq.id, [ { type: "game", id: "1", game_short_name: gameName2 } ] );
 });
 
 server.use(express.static(path.join(__dirname, 'crorepati')));
