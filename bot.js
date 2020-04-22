@@ -17,7 +17,7 @@ const path = require("path");
 const server = express();
 const port = process.env.PORT || 5000;
 const gameName = "crorepati";
-const gameName2 = "RobotRunner";
+const gameName = "RobotRunner";
 const queries = {};
 
 
@@ -419,12 +419,12 @@ server.listen(port);
 
 // ---------- game 2 Robot Runner ----------
 
-bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName2));
+bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName));
 
 //logic 
 
 bot.on("callback_query", function (query) {
-  if (query.game_short_name !== gameName2) {
+  if (query.game_short_name !== gameName) {
     bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   } else {
     queries[query.id] = query;
@@ -438,9 +438,7 @@ bot.on("callback_query", function (query) {
 
 //inline behavior
 bot.on("inline_query", function(iq) {
-  bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName2 } ] );
+  bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName } ] );
 });
 
 server.use(express.static(path.join(__dirname, 'crorepati')));
-
-server.listen(port);
