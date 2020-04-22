@@ -473,6 +473,10 @@ bot.on('inline_query', (msg) => {
 
 // ---------- keyboard ----------
 
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const __1 = require("node-telegram-keyboard-wrapper");
+
 let isRKOpen = false;
 const rk = new __1.ReplyKeyboard();
 const ik = new __1.InlineKeyboard();
