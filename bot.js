@@ -17,6 +17,7 @@ const path = require("path");
 const server = express();
 const port = process.env.PORT || 5000;
 const gameName = "crorepati";
+const gameName2 = "RobotRunner";
 const queries = {};
 
 
@@ -413,5 +414,33 @@ server.get("/highscore/:score", function(req, res, next) {
   bot.setGameScore(query.from.id, parseInt(req.params.score),  options,
   function (err, result) {});
 });
+
+server.listen(port);
+
+// ---------- game 2 Robot Runner ----------
+
+bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName2));
+
+//logic 
+
+bot.on("callback_query", function (query) {
+  if (query.game_short_name !== gameName2) {
+    bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+  } else {
+    queries[query.id] = query;
+    let gameurl = "https://chittimicrobot.herokuapp.com/controller.html?id="+query.id;
+    bot.answerCallbackQuery({
+      callback_query_id: query.id,
+      url: gameurl
+    });
+  }
+});
+
+//inline behavior
+bot.on("inline_query", function(iq) {
+  bot.answerInlineQuery(iq.id, [ { type: "game", id: "0", game_short_name: gameName2 } ] );
+});
+
+server.use(express.static(path.join(__dirname, 'crorepati')));
 
 server.listen(port);
