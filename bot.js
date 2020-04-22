@@ -442,3 +442,31 @@ bot.on("inline_query", function(iq) {
 });
 
 server.use(express.static(path.join(__dirname, 'crorepati')));
+
+bot.on('inline_query', (msg) => {
+  let query = encodeURIComponent(msg.query.trim());
+  bot.answerInlineQuery(msg.id, [{
+      type: 'article',
+      id: query + '_google',
+      title: 'Google',
+      input_message_content: {
+          message_text: 'http://lmgtfy.com/?q=' + query,
+      }
+  },
+  {
+      type: 'article',
+      id: query + '_bing',
+      title: 'Bing',
+      input_message_content: {
+          message_text: 'http://lmgtfy.com/?s=b&q=' + query,
+      }
+  },
+  {
+      type: 'article',
+      id: query + '_yahoo',
+      title: 'Yahoo',
+      input_message_content: {
+      message_text: 'http://lmgtfy.com/?s=y&q=' + query,
+  }
+  }]);
+});
