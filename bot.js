@@ -472,54 +472,54 @@ bot.on('inline_query', (msg) => {
 
 // ---------- keyboard ----------
 
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const __1 = require("node-telegram-keyboard-wrapper");
+// "use strict";
+// Object.defineProperty(exports, "__esModule", { value: true });
+// const __1 = require("node-telegram-keyboard-wrapper");
 
-let isRKOpen = false;
-const rk = new __1.ReplyKeyboard();
-const ik = new __1.InlineKeyboard();
-rk
-    .addRow("1:1 button", "1:2 button")
-    .addRow("2:1 button", "2:2 button");
-ik
-    .addRow({ text: "1:1 button", callback_data: "Works1" }, { text: "1:2 button", callback_data: "Works3" })
-    .addRow({ text: "2:1 button", callback_data: "Works2" }, { text: "2:2 button", callback_data: "Works4" });
-function hasBotCommands(entities) {
-    if (!entities || !(entities instanceof Array)) {
-        return false;
-    }
-    return entities.some(e => e.type === "bot_command");
-}
-bot.onText(/\/reply/i, (msg) => {
-    bot.sendMessage(msg.from.id, "This is a message with a reply keyboard. Click on one of the buttons to close it.", rk.open({ resize_keyboard: true }))
-        .then(function () {
-        isRKOpen = !isRKOpen;
-    });
-});
-bot.onText(/\/force/i, (msg) => {
-    bot.sendMessage(msg.from.id, "Hey, this is a forced-reply. Reply me.", (new __1.ForceReply()).build());
-});
-bot.onText(/\/inline/i, (msg) => {
-    bot.sendMessage(msg.from.id, "This is a message with an inline keyboard.", ik.build());
-});
-bot.on("message", (msg) => {
-    if (!hasBotCommands(msg.entities)) {
-        if (isRKOpen) {
-            bot.sendMessage(msg.from.id, "Good! I'm closing the replyKeyboard.", rk.close());
-            isRKOpen = !isRKOpen;
-        }
-        if (!!msg.reply_to_message) {
-            bot.sendMessage(msg.from.id, "Good! ForceReply works!");
-        }
-    }
-});
-bot.on("callback_query", (query) => {
-  bot.answerCallbackQuery(query.id, { text: "Action received!" })
-      .then(function () {
-      bot.sendMessage(query.from.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
-  });
-});
+// let isRKOpen = false;
+// const rk = new __1.ReplyKeyboard();
+// const ik = new __1.InlineKeyboard();
+// rk
+//     .addRow("1:1 button", "1:2 button")
+//     .addRow("2:1 button", "2:2 button");
+// ik
+//     .addRow({ text: "1:1 button", callback_data: "Works1" }, { text: "1:2 button", callback_data: "Works3" })
+//     .addRow({ text: "2:1 button", callback_data: "Works2" }, { text: "2:2 button", callback_data: "Works4" });
+// function hasBotCommands(entities) {
+//     if (!entities || !(entities instanceof Array)) {
+//         return false;
+//     }
+//     return entities.some(e => e.type === "bot_command");
+// }
+// bot.onText(/\/reply/i, (msg) => {
+//     bot.sendMessage(msg.from.id, "This is a message with a reply keyboard. Click on one of the buttons to close it.", rk.open({ resize_keyboard: true }))
+//         .then(function () {
+//         isRKOpen = !isRKOpen;
+//     });
+// });
+// bot.onText(/\/force/i, (msg) => {
+//     bot.sendMessage(msg.from.id, "Hey, this is a forced-reply. Reply me.", (new __1.ForceReply()).build());
+// });
+// bot.onText(/\/inline/i, (msg) => {
+//     bot.sendMessage(msg.from.id, "This is a message with an inline keyboard.", ik.build());
+// });
+// bot.on("message", (msg) => {
+//     if (!hasBotCommands(msg.entities)) {
+//         if (isRKOpen) {
+//             bot.sendMessage(msg.from.id, "Good! I'm closing the replyKeyboard.", rk.close());
+//             isRKOpen = !isRKOpen;
+//         }
+//         if (!!msg.reply_to_message) {
+//             bot.sendMessage(msg.from.id, "Good! ForceReply works!");
+//         }
+//     }
+// });
+// bot.on("callback_query", (query) => {
+//   bot.answerCallbackQuery(query.id, { text: "Action received!" })
+//       .then(function () {
+//       bot.sendMessage(query.from.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+//   });
+// });
 
 
 // bot.on("callback_query", function(data){
