@@ -20,7 +20,6 @@ const gameName = "RobotRunner";
 const gameName2 = "crorepati";
 const queries = {};
 
-
     i18n = require("i18n");
     
     i18n.configure({
@@ -169,13 +168,13 @@ if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
 }
 var bye = "bye";
 if (msg.text.toString().toLowerCase().includes(bye)) {
-    bot.sendMessage(msg.chat.id, "Hope to see you athithia nesan around again , கவிக்குயில் " + msg.from.first_name);
+    bot.sendMessage(msg.chat.id, "Hope to see you around again , " + msg.from.first_name);
 }    
 var robot = "athie";
 if (msg.text.indexOf(robot) === 0) {
     bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
     const fileId = getFileIdSomehow();
-    bot.sendAudio(chatId, fileId);
+    bot.sendDocument(chatId, fileId);
 }
 });
 
@@ -484,24 +483,24 @@ rk
     .addRow("1:1 button", "1:2 button")
     .addRow("2:1 button", "2:2 button");
 ik
-    .addRow({ text: "1:1 button", callback_data: "Works!" }, { text: "1:2 button", callback_data: "Works!" })
-    .addRow({ text: "2:1 button", callback_data: "Works!" }, { text: "2:2 button", callback_data: "Works!" });
+    .addRow({ text: "1:1 button", callback_data: "Works1" }, { text: "1:2 button", callback_data: "Works3" })
+    .addRow({ text: "2:1 button", callback_data: "Works2" }, { text: "2:2 button", callback_data: "Works4" });
 function hasBotCommands(entities) {
     if (!entities || !(entities instanceof Array)) {
         return false;
     }
     return entities.some(e => e.type === "bot_command");
 }
-bot.onText(/\/replyKeyboard/i, (msg) => {
+bot.onText(/\/reply/i, (msg) => {
     bot.sendMessage(msg.from.id, "This is a message with a reply keyboard. Click on one of the buttons to close it.", rk.open({ resize_keyboard: true }))
         .then(function () {
         isRKOpen = !isRKOpen;
     });
 });
-bot.onText(/\/forceReply/i, (msg) => {
+bot.onText(/\/force/i, (msg) => {
     bot.sendMessage(msg.from.id, "Hey, this is a forced-reply. Reply me.", (new __1.ForceReply()).build());
 });
-bot.onText(/\/inlineKeyboard/i, (msg) => {
+bot.onText(/\/inline/i, (msg) => {
     bot.sendMessage(msg.from.id, "This is a message with an inline keyboard.", ik.build());
 });
 bot.on("message", (msg) => {
@@ -515,9 +514,87 @@ bot.on("message", (msg) => {
         }
     }
 });
-bot.on("callback_query", (query) => {
-    bot.answerCallbackQuery(query.id, { text: "Action received!" })
-        .then(function () {
-        bot.sendMessage(query.from.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
-    });
+bot.on("callback_query", (callbackQuery) => {
+  const message = callbackQuery.message;
+  
+      if(callbackQuery.data === 'Works2') {
+              bot.answerCallbackQuery(message.chat.id, "works2 working");
+  }
+}
+  );
+
+
+// bot.on("callback_query", function(data){
+//   const chatId = msg.id;
+//   console.log(data);
+//   // Get the callback data specified
+//  let callback_data = data.data
+//  if(callback_data == "Works1") {
+//    bot.answerCallbackQuery(chatId,'hello'); 
+//  }
+// });
+
+// Matches "/echo [whatever]"
+
+
+// 'msg' is the received Message from Telegram
+// 'match' is the result of executing the regexp above on the text content
+// of the message
+//const resp = match[]; // the captured "whatever"
+// send back the matched "whatever" to the chat
+//bot.sendMessage(chatId, resp);
+//bot.sendPhoto(chatId, resp);
+
+bot.onText(/\/athie/, (msg) => {
+  bot.sendMessage(msg.chat.id,'Got it, in which category?', {
+    reply_markup: {
+      inline_keyboard: [[
+        {
+          text: 'Development',
+          callback_data: '1'
+        },{
+          text: 'Music',
+          callback_data: '2'
+        },{
+          text: 'Cute monkeys',
+          callback_data: '3'
+        }
+      ]]
+    }
+  });
 });
+
+bot.on("callback_query", (callbackQuery) => {
+  const message = callbackQuery.message;
+  if(callbackQuery.data === '2'){
+    bot.sendMessage(message.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+}else if(callbackQuery.data === '3'){
+bot.sendMessage(message.chat.id, "Hey there again!");
+}
+});
+  
+// bot.onText(/\/athie/, (msg) => {
+//   var opts ={
+//        reply_markup: {
+//            inline_keyboard: [
+//                [{text:"지옥문", url: "http://masca.dothome.co.kr/"}],
+//                [{text:"엔더월드 가는법", callback_data: "2"}],
+//                [{text:"TNT 만드는법", callback_data: "3"}],
+            
+//            ]
+//        } 
+       
+//    };
+//     bot.sendMessage(msg.from.id,"이중 하나를 골라주세요",opts);
+// });
+
+// bot.on("callback_query", (query) => {
+//     if(query.data == '2'){
+//         bot.sendMessage(query.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+//   }else if(query.data == '3'){
+//     bot.sendMessage(query.chat.id, "Hey there again!");
+//   }
+//   });
+
+// ---------- telegraph ----------
+
