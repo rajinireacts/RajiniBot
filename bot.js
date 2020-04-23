@@ -383,7 +383,7 @@ function hasEntity(entity, entities) {
     let gameurl = "https://chittimicrobot.herokuapp.com/index.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
-      // url: gameurl
+      url: gameurl
     });
   // }
 });
@@ -430,7 +430,7 @@ bot.on("callback_query", function (query) {
     let gameurl = "https://chittimicrobot.herokuapp.com/controller.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
-      // url: gameurl
+      url: gameurl
     });
   // }
 });
@@ -564,9 +564,9 @@ bot.onText(/\/athie/, (msg) => {
 
 bot.on("callback_query", (callbackQuery) => {
   const message = callbackQuery.message;
-  if(callbackQuery.data == '2'){
+  if(callback_data == '2'){
     bot.sendMessage(message.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
-}else if(callbackQuery.data == '3'){
+}else if(callback_data == '3'){
 bot.sendMessage(message.chat.id, "Hey there again!");
 }
 });
