@@ -1,16 +1,16 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, {polling: true});
-const ogs = require('open-graph-scraper');
-const firebase = require('firebase');
-const app = firebase.initializeApp({
-  apiKey: "AIzaSyAugoc71iVu4j5WWnM1JN2QVQM0wICCia4",
-  authDomain: "chittimicrobase-a0b6a.firebaseapp.com",
-  databaseURL: "https://chittimicrobase-a0b6a.firebaseio.com",
-  projectId: "chittimicrobase-a0b6a",
-  storageBucket: "chittimicrobase-a0b6a.appspot.com",
-  messagingSenderId: "927853852015",
-});	
+// const ogs = require('open-graph-scraper');
+// const firebase = require('firebase');
+// const app = firebase.initializeApp({
+//   apiKey: "AIzaSyAugoc71iVu4j5WWnM1JN2QVQM0wICCia4",
+//   authDomain: "chittimicrobase-a0b6a.firebaseapp.com",
+//   databaseURL: "https://chittimicrobase-a0b6a.firebaseio.com",
+//   projectId: "chittimicrobase-a0b6a",
+//   storageBucket: "chittimicrobase-a0b6a.appspot.com",
+//   messagingSenderId: "927853852015",
+// });	
 
 const express = require('express');
 const path = require("path");
@@ -179,51 +179,51 @@ if (msg.text.indexOf(robot) === 0) {
 });
 
 // ---------- Bookmark Code ----------
-const ref = firebase.database().ref();
-const sitesRef = ref.child("sites");
+// const ref = firebase.database().ref();
+// const sitesRef = ref.child("sites");
 
-let siteUrl;
-bot.onText(/\/bookmark (.+)/, (msg, match) => {
-  siteUrl = match[1];
-  bot.sendMessage(msg.chat.id,'Got it, in which category?', {
-    reply_markup: {
-      inline_keyboard: [[
-        {
-          text: 'Development',
-          callback_data: 'development'
-        },{
-          text: 'Music',
-          callback_data: 'music'
-        },{
-          text: 'Cute monkeys',
-          callback_data: 'cute-monkeys'
-        }
-      ]]
-    }
-  });
-});
+// let siteUrl;
+// bot.onText(/\/bookmark (.+)/, (msg, match) => {
+//   siteUrl = match[1];
+//   bot.sendMessage(msg.chat.id,'Got it, in which category?', {
+//     reply_markup: {
+//       inline_keyboard: [[
+//         {
+//           text: 'Development',
+//           callback_data: 'development'
+//         },{
+//           text: 'Music',
+//           callback_data: 'music'
+//         },{
+//           text: 'Cute monkeys',
+//           callback_data: 'cute-monkeys'
+//         }
+//       ]]
+//     }
+//   });
+// });
 
-bot.on("callback_query", (callbackQuery) => {
-  const message = callbackQuery.message;
-  ogs({'url': siteUrl}, function (error, results) {
-    if(results.success) {
-      sitesRef.push().set({
-        name: results.data.ogSiteName,
-        title: results.data.ogTitle,
-        description: results.data.ogDescription,
-        url: siteUrl,
-        thumbnail: results.data.ogImage.url,
-        category: callbackQuery.data
-      });
-      bot.sendMessage(message.chat.id,'Added \"' + results.data.ogTitle +'\" to category \"' + callbackQuery.data + '\"!')
-} else {
-      sitesRef.push().set({
-        url: siteUrl
-      });
-      bot.sendMessage(message.chat.id,'Added new website, but there was no OG data!');
-    }
-  });
-});
+// bot.on("callback_query", (callbackQuery) => {
+//   const message = callbackQuery.message;
+//   ogs({'url': siteUrl}, function (error, results) {
+//     if(results.success) {
+//       sitesRef.push().set({
+//         name: results.data.ogSiteName,
+//         title: results.data.ogTitle,
+//         description: results.data.ogDescription,
+//         url: siteUrl,
+//         thumbnail: results.data.ogImage.url,
+//         category: callbackQuery.data
+//       });
+//       bot.sendMessage(message.chat.id,'Added \"' + results.data.ogTitle +'\" to category \"' + callbackQuery.data + '\"!')
+// } else {
+//       sitesRef.push().set({
+//         url: siteUrl
+//       });
+//       bot.sendMessage(message.chat.id,'Added new website, but there was no OG data!');
+//     }
+//   });
+// });
 
 // ---------- Movie Code ----------
 var request = require('request');
@@ -370,22 +370,22 @@ function hasEntity(entity, entities) {
 
  // ---------- games ----------
 
-  bot.onText(/help2/, (msg) => bot.sendMessage(msg.chat.id, "This bot implements a who wants to be a millionaire game. Say /game if you want to play."));
+ bot.onText(/help2/, (msg) => bot.sendMessage(msg.chat.id, "This bot implements a who wants to be a millionaire game. Say /game if you want to play."));
  bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName));
 
  //logic 
 
  bot.on("callback_query", function (query) {
-  if (query.game_short_name !== gameName) {
-    bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
-  } else {
+  // if (query.game_short_name !== gameName) {
+  //   bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+  // } else {
     queries[query.id] = query;
     let gameurl = "https://chittimicrobot.herokuapp.com/index.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
-      url: gameurl
+      // url: gameurl
     });
-  }
+  // }
 });
 
 //inline behavior
@@ -423,16 +423,16 @@ bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName2));
 //logic 
 
 bot.on("callback_query", function (query) {
-  if (query.game_short_name !== gameName2) {
-    bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
-  } else {
+  // if (query.game_short_name !== gameName2) {
+  //   bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
+  // } else {
     queries[query.id] = query;
     let gameurl = "https://chittimicrobot.herokuapp.com/controller.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
-      url: gameurl
+      // url: gameurl
     });
-  }
+  // }
 });
 
 //inline behavior
@@ -514,14 +514,12 @@ bot.on("message", (msg) => {
         }
     }
 });
-bot.on("callback_query", (callbackQuery) => {
-  const message = callbackQuery.message;
-  
-      if(callbackQuery.data === 'Works2') {
-              bot.answerCallbackQuery(message.chat.id, "works2 working");
-  }
-}
-  );
+bot.on("callback_query", (query) => {
+  bot.answerCallbackQuery(query.id, { text: "Action received!" })
+      .then(function () {
+      bot.sendMessage(query.from.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+  });
+});
 
 
 // bot.on("callback_query", function(data){
@@ -566,9 +564,9 @@ bot.onText(/\/athie/, (msg) => {
 
 bot.on("callback_query", (callbackQuery) => {
   const message = callbackQuery.message;
-  if(callbackQuery.data === '2'){
+  if(callbackQuery.data == '2'){
     bot.sendMessage(message.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
-}else if(callbackQuery.data === '3'){
+}else if(callbackQuery.data == '3'){
 bot.sendMessage(message.chat.id, "Hey there again!");
 }
 });
