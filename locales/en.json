@@ -1,3 +1,13 @@
 {
-	"Hello {{name}}, how are you today?": "Hello {{name}}, how are you today?"
+	"Hello {{name}}, how are you today?": "Hello {{name}}, how are you today?",
+	"Welcome You {{name}}, \nI'm <b>Your BOT</b> and I'm here to help you to find ...": "Welcome You {{name}}, \nI'm <b>Your BOT</b> and I'm here to help you to find ...",
+	"\n\nPlease type: \n<b>The name of ...</b>, or\n/list  -  To know the list of... \n/help -  To have support\n/site  -  To visit our website": "\n\nPlease type: \n<b>The name of ...</b>, or\n/list  -  To know the list of... \n/help -  To have support\n/site  -  To visit our website",
+	"Welcome {{name}}, \nI'm <b>CHITTI</b> and I'm here to help you to find ...": "Welcome {{name}}, \nI'm <b>CHITTI</b> and I'm here to help you to find ...",
+	"\n\nPlease type: \n<b>The name of movie ...</b>, or\n/movie  -  To know the full details of the movie... \n/game -  To play games\n@RajiniBot  -  To experience more features": "\n\nPlease type: \n<b>The name of movie ...</b>, or\n/movie  -  To know the full details of the movie... \n/game -  To play games\n@RajiniBot  -  To experience more features",
+	"Welcome {{name}}, \nI'm <b>CHITTI</b> speed 1 terahertz memory 1 zettabyte": "Welcome {{name}}, \nI'm <b>CHITTI</b> speed 1 terahertz memory 1 zettabyte",
+	"\n\nPlease type: \n<b>The name of movie you want to watch...</b>, or type \n/movie _Followed by the Movie Name_ -  To know the full details of the movie... \n/game -  To play games\n@RajiniBot  -  To experience more features": "\n\nPlease type: \n<b>The name of movie you want to watch...</b>, or type \n/movie _Followed by the Movie Name_ -  To know the full details of the movie... \n/game -  To play games\n@RajiniBot  -  To experience more features",
+	"Welcome {{name}}, \nI'm <b>CHITTI The Microbot </b> speed 1 terahertz memory 1 zettabyte": "Welcome {{name}}, \nI'm <b>CHITTI The Microbot </b> speed 1 terahertz memory 1 zettabyte",
+	"\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie -  To know the full details of the movie \n/game -  To play superstar games\n@RajiniBot  -  To experience more features": "\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie -  To know the full details of the movie \n/game -  To play superstar games\n@RajiniBot  -  To experience more features",
+	"Welcome {{name}}, \nI'm <b>CHITTI, The Microbot </b> speed 1 terahertz memory 1 zettabyte": "Welcome {{name}}, \nI'm <b>CHITTI, The Microbot </b> speed 1 terahertz memory 1 zettabyte",
+	"\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie - To know any movie details \n/game  - To play superstar games \n\nVisit @RajiniBot for more features": "\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie - To know any movie details \n/game  - To play superstar games \n\nVisit @RajiniBot for more features"
 }

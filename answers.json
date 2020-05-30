@@ -18,90 +18,2687 @@
                 "type": "text"
             }
         ]
+    }, 
+    {
+        "triggers": [
+            "good morning",
+            "morning"
+        ],
+        "replies": [
+            {
+                "reply": "Good Morning Boss",
+                "type": "text"
+            },
+            {
+                "reply": "காலை வணக்கம்",
+                "type": "text"
+            }
+        ]
     },
     {
+        "triggers": [
+            "good afternoon",
+            "afternoon"
+        ],
+        "replies": [
+            {
+                "reply": "Good Afternoon Boss",
+                "type": "text"
+            },
+            {
+                "reply": "மதிய வணக்கம்",
+                "type": "text"
+            }
+        ]
+    },    
+  {
       "triggers": [
-        "annamalai"
+        "Aboorva Raagangal",
+        "apoorva ragangal",
+        "அபூர்வ ராகங்கள் "
       ],
       "replies": [
        {
-         "reply": "BQACAgQAAx0CRumLaQACBKxel2gVA4p2oAjUo6517jXsCvH4hQACaBEAAh0xmVBMz0iR9NZ3TRgE",
+         "reply": "BQACAgQAAx0CRumLaQACBKNel2EHROdTnRykIhiNu8ZtyXDrYQACNkcAApV2FAredzfn3tkpAxgE",
          "type": "document"
        }
       ]
    },
   {
       "triggers": [
-        "ha ha"
+        "Katha Sangama",
+        "kadha sangama",
+        "கதா சங்கமா "
       ],
       "replies": [
        {
-         "reply": "./media/images/party_girl.gif",
-         "type": "image"
+         "reply": "BQACAgIAAxkBAAIFJ16poTrKNCBymmx_Zp-Wwaw0jxjMAALpBAACDbCYSLSynC4FLTUfGQQ",
+         "type": "document"
        }
       ]
    },
   {
       "triggers": [
-        "kazhugu",
         "Anthuleni Katha",
-        "அந்துலேனி கதா"
+        "anthuleni kadha",
+        "அந்துலேனி கதா "
       ],
       "replies": [
        {
-         "reply": "BQACAgQAAx0CRumLaQACBHRel1iq1iuQDzyPx2RQzHHBWAI8-gACoUoAApV2FAr5AALU1CM9vxgE",
-         "type": "video"
+         "reply": "BQACAgUAAxkBAAIFKF6poToVjRFK6Ney7_tNZYm_GHFyAAI5AAPN0blXDqPnllu0urcZBA",
+         "type": "document"
        }
       ]
    },
   {
       "triggers": [
         "Moondru Mudichu",
-        "Moondru Mudichu",
-        "மூன்று முடிச்சு"
+        "moontru mudichu",
+        "மூன்று முடிச்சு "
       ],
       "replies": [
        {
-         "reply": "https://youtu.be/ktKMzyLo93Q",
-         "type": "text"
-       }
-      ]
-   },
-  {
-      "triggers": [
-        "Baalu Jenu",
-        "Baalu Jenu",
-        "பாலு ஜேனு"
-      ],
-      "replies": [
-       {
-         "reply": "",
-         "type": "text"
+         "reply": "BQACAgQAAx0CRumLaQACBK9el3A5UsWbEqyx_VrQvTUYf1rDuwACrw4AAh0xmVBqd6tIQXEofhgE",
+         "type": "document"
        }
       ]
    },
   {
       "triggers": [
         "Avargal",
-        "Avargal",
+        "avarkal",
         "அவர்கள்"
       ],
       "replies": [
        {
-         "reply": "https://youtu.be/4m5NKv1tY_U",
-         "type": "text"
+         "reply": "BQACAgQAAx0CRumLaQACBKRel2EHUhoJLKCgMq2-FVBOGEf5nwACR0cAApV2FAp9cmO0sdb8rBgE",
+         "type": "document"
        }
       ]
    },
   {
       "triggers": [
         "Kavikuyil",
-        "Kavikuyil",
+        "kavikuil",
         "கவிக்குயில்"
       ],
       "replies": [
        {
-         "reply": "https://youtu.be/NaNUvMKK1RM",
+         "reply": "BQACAgQAAx0CRumLaQACBKVel2EHmVzUoTRXozv58Ki8z0tL9AACUEcAApV2FArs8If0QRjmUBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bhuvana Oru Kelvikuri",
+        "buvana oru kelvikuri",
+        "புவனா ஒரு கேள்விக்குறி "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLJel3A5FagRK0pDuEhApH9l-vwCXQACrxEAAh0xmVBN9nhlXV7IpBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "16 Vayathinile",
+        "16 vayadhiniley",
+        "16 வயதினிலே "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLNel3A5xrkZnbVMk8GT_1ufTHhRgAAC6REAAh0xmVC_s8bVlfi6_xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aadu puli aatam",
+        "aadu puli atam",
+        "ஆடு புலி ஆட்டம் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBKZel2EHpCs7ZmjBGENienfptRZ_swAC6kcAApV2FApgPUj_54rDjRgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Gayatri",
+        "gayathiri",
+        "காயத்ரி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLRel3A5bE65vDpMCOo_Qky2_l5ycgAC3REAAh0xmVDGQaCCnjRjUBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aairam Jenmangal",
+        "ayiram jenmangal",
+        "ஆயிரம் ஜென்மங்கள் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLVel3A5rOxjVL4WQaN--0_VZuBAoQACQhIAAh0xmVAP75HSoukYgBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bairavi",
+        "pairavi",
+        "பைரவி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLZel3A5jOiMTDDppe8qQTY1k6es2gACvhIAAh0xmVBAEEKeIIftVxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ilamai Oonjal Aadugiradu",
+        "ilamai oongal adugirathu",
+        "இளமை ஊஞ்சலாடுகிறது  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLdel3A5-eLcvFQQBZKWDbuCBunK4QACrwkAAtn6qVBi8Bzrgl1V0hgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mullum Malarum",
+        "mulum malarum",
+        "முள்ளும் மலரும் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLhel3A5pWEUuMTGO26CGN1ALFgfKQAC7AkAAtn6qVBxF8UX0VMAAa0YBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Priya kannada",
+        "piriya kannada",
+        "ప్రియ"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/BHQsuKETTTk",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Priya",
+        "piriya",
+        "ப்ரியா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLlel3A5CAaZZsmIQ3A8m515c49ncwACUgoAAtn6qVACQ-4bYMOWzRgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ninaithale Inikkum",
+        "ninaithaley inikkum",
+        "நினைத்தாலே இனிக்கும் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLpel3A5-G7aBDr6lpzNLZ0S4r2RrQACawoAAtn6qVAsrRw1Nn2ifxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dharmayutham",
+        "darmayutham",
+        "தர்மயுத்தம்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLtel3A5Ep4DFXMvB4ZXqJLdhUkssgACcgoAAtn6qVADHG5rIzEwcBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naan Vaazha Vaipen",
+        "nan vaala vaippen",
+        "நான் வாழவைப்பேன்  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBLxel3A5L46j9Mub5-wdGWED3-YQKwACugoAAtn6qVDx6fIS8bCBzxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Tiger",
+        "tiger telugu",
+        "டைகர்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFTV6pzzNI_pMRTxCtLkDU1pZFvfaxAAJcBwACPOtwUIyAR066Jk3WGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aarilirunthu Arubathu Varai",
+        "arilirunthu arupathu varai",
+        "ஆறிலிருந்து அறுபது வரை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBL1el3A5wqKduCqOi9nO3HAQC_JHLQAC0goAAtn6qVBV3xp1eFUuYxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Annai Oru Aalayam",
+        "annai oru alayam",
+        "அன்னை ஓர் ஆலயம் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBL5el3A5jGA3uKG_Z2DSFyuaaNLNiQAC9goAAtn6qVC93oWlz97j5RgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Billa",
+        "billah",
+        "பில்லா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBL9el3A5XvZwyr0NzOoOTWFBD30bUAACCAsAAtn6qVA2IvrLphTd-xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Anbukku Naan Adimai",
+        "anbukku nan adimai",
+        "அன்புக்கு நான் அடிமை  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMBel3A5Oag-holt10ApuNV-pVmX-wACHgsAAtn6qVDP4XUaxeVm-BgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kaali telugu",
+        "kali teulugu",
+        "కాళి"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgIAAxkBAAIFKV6poTqFcULtSQAB0-ZsBjJs0ZXlZAACCQQAAtnVoUh3Z3qri-0nHhkE",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Kaali",
+        "kali",
+        "காளி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgIAAx0CRumLaQACBMFel3A5Ie8IQLavZUnIXzwmzoMGIwACCQQAAtnVoUh3Z3qri-0nHhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ellam Un Kairasi",
+        "elam un kairasy",
+        "எல்லாம் உன் கைராசி "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBKlel2EHNWZ6f0vpBS7HF598cj3C5gACkEoAApV2FAoeJ_S6We_GmhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Polladhavan",
+        "pollathavan",
+        "பொல்லாதவன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHJel1iqKWvRNFpdB7EfQ_HveAo2kQAClEoAApV2FAqXz1CkZjgQ6xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Murattu Kaalai",
+        "murattu kalai",
+        "முரட்டுக்காளை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMNel3A5FLCH2d4C245cGFm5Em7FjQACYgkAAlHXsVDZ7fJwNIBepRgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thee",
+        "thei",
+        "தீ"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHNel1iqPaqPlXxt7a9tAQqUNhiSiAACmEoAApV2FAp6rcI63te1NBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kazhugu",
+        "kalugu",
+        "கழுகு"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMRel3A5wFlXefwzj-OBAZ5kuPSmlQACSQgAAlHXsVAOqo24Q1c5ORgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thillu Mullu",
+        "thilu mulu",
+        "தில்லு முல்லு"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMVel3A5TzGXT59YYKyFGSU7hb2aQgACSwgAAlHXsVBkG3Hho8jirBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Garjanai",
+        "karganai",
+        "கர்ஜனை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHZel1iqZB-jRDReo-BaIKtIjQ_r0wAC1UoAApV2FAq846Ag3_c7iBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Raanuva Veeran",
+        "ranuva veeran",
+        "ராணுவ வீரன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHdel1iqEmfvh2eiiFu_Yq7nuZZGcwAC70oAApV2FArikvgxorryjBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bandipotu Simham",
+        "pandipotu simham",
+        "பண்டிபொட்டு சிம்மம் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFKl6poTo6XTLD7pM-6p9KH7UNQxkGAAIYBwACEnqJU_1_bmn3ajttGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Pokkiri Raja",
+        "pokiri raja",
+        "போக்கிரி ராஜா "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHhel1iqXMktwSDZcrcFt6zLLdImkwAC80oAApV2FAqf43jfAAHgoZcYBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thanikaatu Raja",
+        "tanikatu raja",
+        "தனிகாட்டு ராஜா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHlel1iquscJNhG4qEM4RqdjS_BJcAAC-EoAApV2FApLYSw4FPjajhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Pudhu Kavidhai",
+        "puthu kavithai",
+        "புதுக்கவிதை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMdel3A503I2YsLjb_18vxlyr9vovQACNQkAAlHXsVARONgJ3ATjJxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Moondru Mugam",
+        "moontru mugam",
+        "மூன்று முகம் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBKpel2EH6WUMHnN0lYyGYwGt5itHPgAC_EoAApV2FAqSlenMY_B60xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Paayum puli",
+        "payum puli",
+        "பாயும் புலி "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMlel3A5tPfcdRul2rsgOTPwt2k58AACAQkAAlHXsVBmYb_9j_A7dxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thaai Veedu",
+        "thai veedu",
+        "தாய் வீடு "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIpel1iqSMN9GneWrxCOhIdk-oUdlAACEUsAApV2FAoasfw17GwrlBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Adutha Vaarisu",
+        "adutha varisu",
+        "அடுத்தவாரிசு "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHpel1iqrQeTjS0WIunEu_cXNZBTSQACHEsAApV2FAoIegHyNjHt1xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thanga Magan",
+        "thanga mahan",
+        "தங்கமகன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBHtel1iq7_g6_CsC42sw44PYUz9WEgACI0sAApV2FAqD_S1IfJJN7BgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naan Mahaan Alla",
+        "nan mahan ala",
+        "நான் மகான் அல்ல   "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMtel3A5uRwBVVpkOggkw17MNV3u3QACCgkAAlHXsVDgmlNis2lQFhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thambikku Entha Ooru",
+        "thambiku entha ooru",
+        "தம்பிக்கு எந்த ஊரு "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBMxel3A5fq3mKA-wnt-piCRuckMO_gACrhQAAlHXuVAOM4D2b_OI6BgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kai Kodukkum Kai",
+        "kai kodukkum kai",
+        "கை கொடுக்கும் கை  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBH1el1iqQQyyHaPeXR7U2HCtb0NwxAACLksAApV2FAo6W2Yu0OsyIhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Nallavanuku Nallavan",
+        "nalavanukku nallavan",
+        "நல்லவனுக்கு நல்லவன் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNVel3A57YhVQYXUdzcYmPqOVgPu6QACWQ0AAmf90FDVMAr1vEKjURgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naan Sihappu Manidhan",
+        "nan sigappu manithan",
+        "நான் சிவப்பு மனிதன்  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBH5el1iqSBVO5GLlOIyJS2m0R2e8tAACOEsAApV2FArjO1Gqu6gwxBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Un Kannil Neer Vazhindhal",
+        "un kanil neer valinthal",
+        "உன் கண்ணில் நீர் வழிந்தால் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBH9el1iqGoqlSdTtDf-WRP96GqJSVwACOUsAApV2FAqb2uK1ps7l-xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Shri Raghavendra",
+        "shri raghaventra",
+        "ஸ்ரீ ராகவேந்திரா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIBel1iqZgT-j_Y98NBg1p3IlCWVvgACPEsAApV2FApoMg9qCfLs5xgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Padikadhavan",
+        "padikathavan",
+        "படிக்காதவன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIFel1iq937vArQewKvpOqMXRFeQKAACQUsAApV2FArxh_xK1lnydxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naan Adimai Illai",
+        "nan adimai ilai",
+        "நான் அடிமை இல்லை "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIJel1iqG-zwF_ojQWUmQITamF5wggACSEsAApV2FAryIE1DY1diehgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Jeevana Porattam",
+        "jeevana poratam",
+        "ஜீவன போராட்டம்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFUF6pzzOKXlJlcUmF2OTrahKZGBXQAAKjCAACuVGpU_7QkQx-rnucGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Viduthalai",
+        "viduthalaii",
+        "விடுதலை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBINel1iqjkTztc-e8qEh-qgIq0VCMAACU0sAApV2FApZkidkV44vERgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Maaveeran",
+        "maveeran",
+        "மாவீரன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFK16poTpd49loUrsDvqJSifsExrPWAAJgSwAClXYUCi7JWFakzIXnGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Velaikkaran",
+        "velaikaaran",
+        "வேலைக்காரன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNBel3A5o1GyI9ObAAFpAAGDdrXXW8tAAALiBgACZ_3QUOqvbft3NbjIGAQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Oorkavalan",
+        "oorukavalan",
+        "ஊர்க்காவலன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIVel1iqLskAAU2khQaFxxzaaqeAfCkAAnNLAAKVdhQK4Tf0xbUo8KMYBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Manidhan",
+        "manithan",
+        "மனிதன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNFel3A5SZS6aRZKR3IBAAGT8CUS83gAAvAGAAJn_dBQSbxO71T3MYgYBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Guru Shisyan",
+        "guru sisyan",
+        "குரு சிஷ்யன்  "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBM9el3A5GlRYVpCPDX1NwzIHID5wzgACaAoAAmf9wFAYPtqtUnRJLBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dharmathin Thalaivan",
+        "darmathin thalaivan",
+        "தர்மத்தின் தலைவன் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFLF6poTobGl7d_DdC-KL-R1JR8pSAAAKBSwAClXYUCkrSkz1gIg4YGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kodi Parakuthu",
+        "kodi parakutu",
+        "கொடி பறக்குது"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIhel1iq1hvZLA6QuDg0FTuJ9Y-amAACjUsAApV2FAqGCsQGbo3Q9BgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Rajaathi Raja",
+        "rajathi raja",
+        "ராஜாதி ராஜா "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNJel3A5PckzItU0Mn7GKOo8Ye6GXAACwQcAAmf90FD5lBD3Jd04ahgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Siva",
+        "shiva",
+        "சிவா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBIxel1iqv0PMcI4W_noG1eVE-5PZDwACmEsAApV2FArEp9t9CA4UDxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Raaja Chinna Roja",
+        "raja chinna roja",
+        "ராஜா சின்ன ரோஜா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBN1el3A5C-pA5d5aKGw9yz5HG6n5CgACqRQAAu9k2VDLp-P0BgABhcsYBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mappillai",
+        "mapilai",
+        "மாப்பிள்ளை "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBI1el1iqpf7WbNFw7v_i32GTFmi-_QACJUwAApV2FAoYh21fxNxrbRgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Panakkaran",
+        "panakaran",
+        "பணக்காரன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNNel3A5cwaVZk5dkebccAQ3l40-1wACEAgAAmf90FDiSiKl72-YahgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Adhisaya Piravi",
+        "adisaya piravi",
+        "அதிசயபிறவி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBI5el1iqVgQ1qRPVMoahoba-C1ztxwACe0wAApV2FAqNIXP1I4-LIhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dharmadurai",
+        "dharmathurai",
+        "தர்மதுரை   "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBI9el1iq9TiR_TeZuskQf5ezJp65_wACf0wAApV2FAotGZXHO9O5HBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Arasan",
+        "arasen",
+        "அரசன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFR16pzzN9-U1nBjGkIlu5N43YXMi5AAL6BQACsM_BUH5AzEA7tRSyGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naatuku Oru Nallavan",
+        "natuku oru nallavan",
+        "நாட்டுக்கு ஒரு நல்லவன் "
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBJBel1iq-Yedy8xAJYxXRLlJj_-7pQACgkwAApV2FAoYKcpS92f3-RgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dalapathi",
+        "thalapathi telugu",
+        "దళపతి"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFS16pzzN_zbVQV6xvucMAAcm_UlMhoAACHgADt6fpVZt1aejjvTz9GQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Thalapathi",
+        "thalapathy",
+        "தளபதி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBJFel1iq9--mNcY0Zrp3IPD_mGJazwACvSgAApV2FAprr0M_82KCxBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mannan",
+        "mannen",
+        "மன்னன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNRel3A5kkBkTEREWRBcFLPYc8B0wAACKAgAAmf90FDSbb4LjbDmWxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Annamalai",
+        "annamalay",
+        "அண்ணாமலை"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNZel3A587Khl4-MrEp7o8ceqPwPywACeAgAAmf90FBmHH3sMJH4hxgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kanoon Ka Khiladi",
+        "pandiyan hindi",
+        "पांडियन"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/gK2VVzRh9kE",
+         "type": "text"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Secret Police",
+        "pandiyan telugu",
+        "పాండియన్"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFTF6pzzP4gu2dMB7LDT7xz43BJWzPAAJzCgACYxiwUQ6t8Z8mIAvYGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Pandiyan",
+        "pantiyan",
+        "பாண்டியன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFLV6poTorohCtrrvpkkJcPkHhKo9GAAJyBQAC72TRUBZPgWT6Psl6GQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Rowdy Jamindar",
+        "ejamaan telugu",
+        "ఎజమాన్"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFT16pzzOaxVoT4WZMqOx2S8DBa24pAAJqEAACVJDBUYPOSH8zYELQGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Ejamaan",
+        "ejaman",
+        "எஜமான்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNdel3A5cJ1JorwsZ1K3qiTF2FctGQAC3AwAAmf90FCYuI-dMqx9cBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Uzhaipaali",
+        "ulaipali",
+        "உழைப்பாளி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBJVel1iqG4auwz53XaOHGLVllIf4OAACCU0AApV2FAr1iLapuG7jehgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Valli",
+        "vally",
+        "வள்ளி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFLl6poToxbpIUEe0TUwWvp1E0g7amAAIXBgACsM_BUDaYLTPTp0GvGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Veera",
+        "veerah",
+        "வீரா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNpel3A5H8U1Zpmv-6tviR5WFaxReAAClAUAAu9k0VAeLjrO24ycHhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Baasha hindi",
+        "batcha hindi",
+        "बाशः"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFMV6poTqVFEQAARuTQwABJd5I0ILuDIQAAkkBAAK0KdBVUdd0zLwmk2YZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Baasha telugu",
+        "batcha telugu",
+        "బాషా"
+      ],
+      "replies": [
+       {
+         "reply": "AAMCBAADGQEAAgUvXqmhOv-1s4ZExpRUV20hBFhq1nQAAnUKAAKs_eBRt0rITS4rEpfV8zsbAAQBAAdtAAN_jAACGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Baasha",
+        "batcha",
+        "பாட்ஷா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAxkBAAIFMF6poTpEMo9-htvtnEKtfeIKsnkLAAKjAAO5UZFHLH_RB_IHcskZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Peddarayudu",
+        "pedarayudu",
+        "பெத்தராயுடு"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFRl6pzzObzCfsTTj2AAEB8x-FmQRM4wACXQADNfU5VLa8VCjyXCL-GQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aatank Hi Aatank",
+        "aatank hy atank",
+        "ஆதங்க் ஹீ ஆதங்க்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFRV6pzzNQxIVDeaFt3o2bTEWG4_MSAAI5VgAClXYUCizt-KdHjyEcGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Muthu Maharaja",
+        "muthu hindi",
+        "मुथु"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/0JSnqwRPB04",
+         "type": "text"
+       }
+      ]
+   },       
+  {
+      "triggers": [
+        "Muthu Telugu",
+        "mutthu telugu",
+        "ముత్తు"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFSF6pzzNxH9Z6uxn_Uk321vK3Uq90AAIXAAOzd6FUtGbPyhGzjekZBA",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Muthu",
+        "mutthu",
+        "முத்து"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBNtel3A5O3SpUMokjCgMUDMAAQM0Em4AAo0KAALvZNlQzRLgkYXTusMYBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Arunachalam telugu",
+        "arunaachalam telugu",
+        "அருணாச்சலம்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFP16pzCz3TThW13AJCNWA4KLaeXtYAAJHAAP8glhV6PQLVDSU5c0ZBA",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Arunachalam",
+        "arunaachalam",
+        "அருணாச்சலம்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAxkBAAIFXl6p5U-7r2bRcLWJXTe2cfVLl5eyAAKNAAPXf6BGmq9B982MyJwZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Narasimha",
+        "padayappa telugu",
+        "நரசிம்ஹா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFQl6pzzNUueFFM8gB2zaxd6EXFYs8AAKdBwACe_FQU5Ch9YTVPg1zGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Padayappa",
+        "padaiyappa",
+        "படையப்பா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAx0CRumLaQACBJpel1iq6qb5gYdg9OSMF9AtJKwSnQACpQUAAru0tAdRGU3qSqkHRBgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bulandi",
+        "bullandi",
+        "புலாந்தி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFRF6pzzPxQmFrCEA4mryjdboFA6NNAAJLAAMtMXFWd5G5McL5xowZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Baba",
+        "baaba",
+        "பாபா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFQF6pzzOaQWTEjoSvAAErbUYC3YQPowACDgYAArDPwVD6Vn8Zn8IC-xkE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Chandramukhi telugu",
+        "chandramugi telugu",
+        "చంద్రముఖి"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFOF6poTqQiZj6oSIG6NYqxrD5NOz1AALxBwACRxSIU4S0G_6xOD4iGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Chandramukhi",
+        "chandramugi",
+        "சந்திரமுகி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFNl6poToLx5MTRJTQIBy5wOInHrjcAAIyBgACsM_BUFp2YIaw_zWmGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Sivaji hindi",
+        "sivaaji hindi",
+        "शिवाजी"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFM16poTq9fGOFDwJc1OSAOpwTcj5fAAL8AANstU4AAQmLUrHHZwfBGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "sivaji telugu",
+        "sivaaji telugu",
+        "శివాజీ"
+      ],
+      "replies": [
+       {
+         "reply": "BAACAgUAAxkBAAIFNV6poTpqDTmQtY6nfXvuGzNxHIwfAAIhAANlZxlWvC1Y70Mo-xsZBA",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Sivaji",
+        "sivaaji",
+        "சிவாஜி"
+      ],
+      "replies": [
+       {
+         "reply": "AAMCAQADGQEAAgU0XqmhOiVyebHU6y5caPTlWqAS9UoAAqEAA7lRkUdc4-Vcxs-z6SxDbQYABAEAB20AA5NNAAIZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kathanayakudu",
+        "kuselan telugu",
+        "கதாநாயக்குடு"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFYF6p5k1YoZnX2_b16E1n1-L6DkoyAAIZCQACoeTYUYbF2Z8VamKGGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Kuselan",
+        "kuseylan",
+        "குசேலன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFQV6pzzOLVb_nKof4bviIW7d6vZJwAAIdBgACsM_BUOdHdB4pZEsoGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Endhiran",
+        "enthiran",
+        "எந்திரன்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAx0CRumLaQACBO1el34axensaXgv8Qh90XJ4lQ4ilQACkgADtJLRR-WjCbQ2ZlR3GAQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kochadaiiyaan hindi",
+        "kochadaiyan hindi",
+        "कोचादाइयां"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.voot.com/movie/kochadaiiyaan/378655?utm_source=google_web&utm_medium=watchaction",
+         "type": "text"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Kochadaiiyaan",
+        "kochadaiyan",
+        "கோச்சடையான்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAxkBAAIFX16p5dL15XcJJ1T26rcRN538CJ6RAAJFAAMy6rBHHHF_XY6lIKwZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "lingaa hindi",
+        "linga hindi",
+        "लिंगा"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.jiocinema.com/movies/lingaa?type=0&id=8a0da4d274c811e688d58522ba040c22",
+         "type": "text"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "lingaa telugu",
+        "linga telugu",
+        "లింగా"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFQ16pzzM1Jw1rSsvJ_nHJWZiVRsx_AAKJDgACZhZYUO6Svm6kr_RSGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Lingaa",
+        "linga",
+        "லிங்கா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBJ9el1iq0hnY5TKIvZ85Xu-iogpVYwACdwEAArt4cwaguEtC_TXc1RgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kabali hindi",
+        "kaabali hindi",
+        "कबाली"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFWl6p4TlBB9gKC8GnRFykOcnZVldrAAIPAAOh0cBVzMVSH1pdYQQZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kabali malayalam",
+        "kaabali malayalam",
+        "കബാലി"
+      ],
+      "replies": [
+       {
+         "reply": "AAMCAgADGQEAAgVbXqnhOZuD9rQ4Ywr6Vq6omu6GDmUAAqAEAAJUeSBJGQ12cgY40SF_pUgPAAQBAAdtAAPCJgACGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "kabali telugu",
+        "kaabali telugu",
+        "కబాలి"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFWV6p4Tmpw3xweRdaxenZURbBF7VRAAK0CQACbjXwU7ghXrpi5dfDGQQ",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Kabali",
+        "kabali tamil",
+        "கபாலி"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAxkBAAIFXF6p4iCfz-65kiQBZfFi8ECejHjKAAKkAAO5UZFHRM-f2vyMeXoZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kaala hindi",
+        "kala hindi",
+        "काला"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.hotstar.com/in/movies/kaala/1000217977/watch",
+         "type": "text"
+       }
+      ]
+   },        
+  {
+      "triggers": [
+        "kaala malayalam",
+        "kala malayalam",
+        "കാല"
+      ],
+      "replies": [
+       {
+         "reply": "AAMCAgADGQEAAgU-XqnL6ZnlD_79jP5F7oLreO6Eay8AAl4FAAI_LXFJA62ZlCij15N_pUgPAAQBAAdtAAPCJgACGQQ",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kaala telugu",
+        "kala telugu",
+        "காலா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgUAAxkBAAIFPV6pxicq-BEzAd8EdP94sEbYYVOFAAIoAANUMNBWmbp5OxJ7Y2oZBA",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Kaala",
+        "Kaala Tamil",
+        "காலா"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgEAAxkBAAIFPF6pxFLFwSFCtnW1YJrFxkeO75BxAAKlAAO5UZFHaQRzYM2oNdsZBA",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "2.0 hindi",
+        "robot 2",
+        "robo 2 hindi"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBOxel31imKL-Ahkqtwa0yTpol_vO2AACDAsAAgVj-FFgvmwDn2H5thgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "2.0 telugu",
+        "2point0 telugu",
+        "robo 2 telugu"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBOxel31imKL-Ahkqtwa0yTpol_vO2AACDAsAAgVj-FFgvmwDn2H5thgE",
+         "type": "document"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "2.0",
+        "2point0",
+        "2.0 tamil"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBOxel31imKL-Ahkqtwa0yTpol_vO2AACDAsAAgVj-FFgvmwDn2H5thgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Petta",
+        "petta hindi",
+        "பேட்ட"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAxkBAAIFTl6pzzObnOXYfC-xaMct8tIAAbCldwAC3AwAAumyaVNOCqe0hBqw2RkE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Darbar",
+        "darbar hindi",
+        "தர்பார்"
+      ],
+      "replies": [
+       {
+         "reply": "BQACAgQAAx0CRumLaQACBOlel3nWkRfiP2vu60ViR1AwNeu5sAACphQAAtlaUFAwU5X8kp3xNhgE",
+         "type": "document"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Baalu Jenu",
+        "balu jenu",
+        "பாலு ஜேனு"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.amazon.com/gp/video/detail/B0786SFFXL/ref=atv_dp_share_cu_r",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Raghupathi Raghava Rajaram",
+        "ragupathi ragava rajaram",
+        "ரகுபதி ராகவ ராஜாராம் "
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Chilakamma Cheppindi",
+        "chilakama cheppindi",
+        "சிலகம்மா செப்பிந்தி  "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/C-Ohu6grWHQ",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ondu Premada Kathe",
+        "ontu premada kathe",
+        "ஒண்டு பிரேமதா கதா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/XExW8Jd1rxY",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Sagodarara Savaal",
+        "sagodara savaal",
+        "சகோதர சவால்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/H7kS_edGBmA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kumkuma Rakshe",
+        "gumguma rakshey",
+        "குங்கும ரக்சே"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/jiWCRFjhjAE",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aaru Pushpangal",
+        "aaru pushpankal",
+        "ஆறு புஷ்பங்கள்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/wWzk6dZM2mc",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Tholireyi Gadichindhi",
+        "thollireyi gadichinthi",
+        "தொலிரேயி கடிட்சண்டி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/_fCuFVSKcDo",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aame Katha",
+        "aahme kadha",
+        "ஆமே கதா"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Galate Samsara",
+        "galatey samsara",
+        "கலாட்டா சம்சாரா"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Shankar Salim Simon",
+        "sankar salim siman",
+        "சங்கர் சலீம் சைமன் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/CvvzOWbNiMc",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Killadi Kittu",
+        "killadi kettu",
+        "கில்லாடி கிட்டு "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/qUqIxN3bcFc",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aanandamulla Savaal",
+        "aananthamulla saval",
+        "அன்னடம்முளு சவால்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/XVxY5jHtqMs",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Maathu Thappada Maga",
+        "maathu thappada magha",
+        "மாது தப்படமகா"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mangudi Minor",
+        "maangudi minor",
+        "மாங்குடி மைனர்  "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/lUHASoeHE1M",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Sadhurangam",
+        "sathurangam",
+        "சதுரங்கம்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/Ov_vaJFBV7s",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Vanakathirkuriya Kaadhaliye",
+        "vanakuthuuriya kadhaliey",
+        "வணக்கத்திற்குரிய காதலியே  "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/eZwEb6sMsEI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Vayasu Pilichindhi",
+        "vayasu pilichinthi",
+        "வயசு பிலிசிண்டி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/e69m-ogZOHg",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Iraivan Kodutha Varam",
+        "irayvan kodutha vaaram",
+        "இறைவன் கொடுத்த வரம் "
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thappida Thala",
+        "thappida dala",
+        "தப்பிட தலா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/TbRVC1cC3eA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thappu Thaalangal",
+        "thappu dalangal",
+        "தப்புப்தாளங்கள்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/U_hBaYNzqSc",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Aval apdithan",
+        "aval aptithan",
+        "அவள் அப்படித்தான் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/lvhZBBt7oD8",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thaai Meedhu Sathiyam",
+        "thai meethu sathyam",
+        "தாய் மீது சத்தியம் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/nzKBK0hNnpM",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "En kelvikku ena Badhil",
+        "en kelvikku enna badhil",
+        "என் கேள்விக்கென்ன பதில் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/ev1RFCT_sbA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Paavathin Sambalam",
+        "pavathin sambalam",
+        "பாவத்தின் சம்பளம் "
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Justice Gopinath",
+        "justice gobinath",
+        "ஜஸ்டிஸ் கோபிநாத் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/ZFJg-T1EnKs",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kuppathu Raja",
+        "kupathu raja",
+        "குப்பத்து ராஜா "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/DUbl7y_ZOvI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Iddaru Ashadhyule",
+        "iddaru asahduley",
+        "இதாரு அசாத்யுலே"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/QEu1LDF-laA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Allaudinum Arpuda Vilakkum",
+        "alladinum arputha vilakum",
+        "அலாவுதீனும் அற்புத விளக்கும்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/Oz44MX7jWhU",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Allauddinum Albhutha Vilakkum",
+        "aladinum albutha vilakum",
+        "Allaudinum Arpuda Vilakkum malayalam"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/sjs2_7kt1wA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Andamaina Anubhavam",
+        "andamaina anubavam",
+        "அந்தமைனா அனுபவம்"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thaayillamal Naan Illai ",
+        "thayilamal nan illai",
+        "தாயில்லாமல் நானில்லை"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/2YQIBgCYNvM",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Amma Evarikainna Amma",
+        "amma evarikaina amma",
+        "அம்மா எவரிக்கைன அம்மா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/mZmVXBhiLPM",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ram Robert Rahim",
+        "ram robert rakim",
+        "ராம் ராபர்ட் ரஹீம்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/JgKtUqzNgJI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mayadari Krishnudu",
+        "mayatari krishnudu",
+        "மாயதாரி கிருஷ்ணடு"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/ZFNOCVRccsE",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Naan pota Savaal",
+        "nan pota saval",
+        "நான் போட்ட சவால்  "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/I88hPiMcdUQ",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Johnny",
+        "jony",
+        "ஜானி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/4kj6PLvDSOs",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Garjanam",
+        "garjanam",
+        "கர்ஜனம்"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Netrikkan",
+        "netriggan",
+        "நெற்றிக்கண்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/t2P0XpXQ5Ac",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Garjane",
+        "kargane",
+        "கர்ஜனே"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ranga",
+        "rangaa",
+        "ரங்கா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/BYR68pGLLhM",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Engeyo Ketta Kural",
+        "engayo keta kural",
+        "எங்கேயோ கேட்ட குரல்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/gzA8QkD0Ke0",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Fauladi Mukka",
+        "faulati muka",
+        "பாவுலடி முக்கா "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/5hfbuVqJl3w",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Thudikkum Karangal",
+        "thudikkum karankal",
+        "துடிக்கும் கரங்கள் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/czfuOjG2OYs",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Andha Kanoon",
+        "andtha kanon",
+        "அந்தா கானூன்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/OMvYo1W9SVo",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Sivappu Sooriyan",
+        "sivapu sooriyan",
+        "சிவப்பு சூரியன் "
+      ],
+      "replies": [
+       {
+         "reply": "https://www.amazon.com/gp/video/detail/B0097CCFDW/ref=atv_dp_share_cu_r",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ragile Suryudu",
+        "ragiley suryudu",
+        "ரகிலே சுரியுடு "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/20hjWgV7ytY",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Jeet Hamaaru",
+        "jeet hamaru",
+        "ஜீத் ஹமாரி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/wip7RxqgRfE",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Meri Adalat",
+        "meri adalt",
+        "மேரி அதாலத்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/SbZgFhbs9j0",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ethe Na Savaal",
+        "ethe ne saval",
+        "ஏதே நாசவல்"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Anbulla Rajinikanth",
+        "anpulla rajinikanth",
+        "அன்புள்ள ரஜினிகாந்த் "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/Iky1dri05Bw",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Ganguva",
+        "gangvaa",
+        "கங்குவா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/Y6X3Drlh-ZI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "John Johnny Janardhan",
+        "John jani janardhan",
+        "ஜான் ஜானி ஜனார்தன்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/_Hu5w4ul5OY",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mahaguru",
+        "mahaguru",
+        "மஹா குரு"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.amazon.com/gp/video/detail/B07P6YVLVQ/ref=atv_dp_share_cu_r",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Wafadaar",
+        "wafataar",
+        "வஃபாதர்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/qm-3dZzuZSM",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Geraftaar",
+        "geratrar",
+        "கிரஃப்தார்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/9A2RMUo5GU0",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bewafaai",
+        "bewafai",
+        "பேவஃபா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/MwRPviGNzPg",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Mr Bharath",
+        "mr barath",
+        "மிஸ்டர் பாரத்  "
+      ],
+      "replies": [
+       {
+         "reply": "https://www.facebook.com/APInternational/videos/1125206977652859/?t=2262",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bhagwaan Dada",
+        "bhagwan dada",
+        "பவான் தாதா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/3yWnYuOGAtI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Asli Naqli",
+        "asli nakli",
+        "அசலி நகலி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/DxnvRmc1dv4",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dosti Dushmani",
+        "dosthi dushmani",
+        "தோஸ்தி துஸ்மன்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/DKDVUIgJyT0",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Insauf Kaun Karega",
+        "insauf kaan karega",
+        "இன்சாப் கோன் கரேகா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/jKGggagg_zs",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Kanchukotaku Monagadu",
+        "kanchikotagu monagadu",
+        "காஞ்சு கோட்ட மொனகடு "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/dUh5sNNXzy4",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Uttar Dakshin",
+        "utthar dakshin",
+        "உத்தர் தஷின்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/GnfHR5d-g38",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Tamacha",
+        "tamasha",
+        "தமாசா"
+      ],
+      "replies": [
+       {
+         "reply": "https://www.zee5.com/movies/details/tamacha/0-0-tamacha",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bloodstone hindi",
+        "bloodston hindi",
+        "பிளட் ஸ்டோன்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/avlwZTD0pxo",
+         "type": "text"
+       }
+      ]
+   },    
+  {
+      "triggers": [
+        "Bloodstone",
+        "bloodston",
+        "பிளட் ஸ்டோன்"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Gair Kanooni",
+        "gair kanoni",
+        "கைர் கானூனி "
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/qwCj86BaJ7Y",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Raaja Chinna Roja telugu",
+        "raja chinna roja telugu",
+        "రాజా చిన్న రోజా"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/iXDUCu99ikY",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bharstachar",
+        "Bhrashtachar",
+        "பிரஸ்டார்ச்சர்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/PEgWYZ7uXkI",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "ChaalBaaz",
+        "chalbaaz",
+        "சால்பாஸ்"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dhanwan No.1",
+        "danwan no 1",
+        "தன்வன் நம்பர் 1"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/sfMnj0umIkA",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Hum",
+        "हम",
+        "ஹம்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/EsxsAZT85s4",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Farishtay",
+        "faristay",
+        "ஃபரிஸ்தே"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/zNthtYhEZjw",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Khoon Ka Karz",
+        "khon ka karz",
+        "கூன் கா கர்ஜ்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/vYL2JO-nSHk",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Phool Bane Angare",
+        "phool baney angarey",
+        "பூல் பனே அங்காரே"
+      ],
+      "replies": [
+       {
+         "reply": "Not Available",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Tyagi",
+        "thyagi",
+        "தியாகி"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/tbf6XoE3G8I",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Insaniyat Ke Devta",
+        "insaniyath ke devta",
+        "இன்சானியத் கே தேவதா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/uG0ibgdu4co",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Bhagya Debata",
+        "bhagiya debitta",
+        "பாக்கியதேவ்தா"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/vsyBaQJiph0",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Dilwala The Real Man",
+        "dilwaley the real man",
+        "தில்வாலே தி ரியல் மேன்"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/YIETOFKiD1o",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "robo telugu",
+        "robot telugu",
+        "ఎందిరన్"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/DEqYqC5H3-k",
+         "type": "text"
+       }
+      ]
+   },
+  {
+      "triggers": [
+        "Robot",
+        "robot hindi",
+        "रोबोट"
+      ],
+      "replies": [
+       {
+         "reply": "https://youtu.be/u8fPgtyTqJ0",
          "type": "text"
        }
       ]

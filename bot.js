@@ -16,7 +16,7 @@ const express = require('express');
 const path = require("path");
 const server = express();
 const port = process.env.PORT || 5000;
-const gameName = "RobotRunner";
+const gameName = "RobotRunner"; 
 const gameName2 = "crorepati";
 const queries = {};
 
@@ -31,25 +31,25 @@ const queries = {};
     });
         
     
-    // Test Language
-    bot.onText(/\/test_i18n/, (msg) => {
+    // // Test Language
+    // bot.onText(/\/test_i18n/, (msg) => {
     
-      if (msg.from.hasOwnProperty('language_code') && msg.from.language_code!=('undefined')) {
-        var str = msg.from.language_code.toLowerCase();
-        var code = str.substring(0, 2);
-        i18n.setLocale(code);
-      }
+    //   if (msg.from.hasOwnProperty('language_code') && msg.from.language_code!=('undefined')) {
+    //     var str = msg.from.language_code.toLowerCase();
+    //     var code = str.substring(0, 2);
+    //     i18n.setLocale(code);
+    //   }
       
-      var greeting = i18n.__('Hello {{name}}, how are you today?', { name: msg.from.first_name });
+    //   var greeting = i18n.__('Hello {{name}}, how are you today?', { name: msg.from.first_name });
     
-      bot.sendMessage(msg.chat.id, greeting, {
-          parse_mode: "HTML"
-        }
-      );
-    });	
+    //   bot.sendMessage(msg.chat.id, greeting, {
+    //       parse_mode: "HTML"
+    //     }
+    //   );
+    // });	
       
     // Start Message i18n
-    bot.onText(/\/start_i18n/, (msg) => {
+    bot.onText(/\/start/, (msg) => {
     
       if (msg.from.hasOwnProperty('language_code') && msg.from.language_code!=('undefined')) {
         var str = msg.from.language_code.toLowerCase();
@@ -57,14 +57,107 @@ const queries = {};
         i18n.setLocale(code);
       }
       
-      var msg_start_1 = i18n.__("Welcome You {{name}}, \nI'm <b>Your BOT</b> and I'm here to help you to find ...", { name: msg.from.first_name });
-      var msg_start_2 = i18n.__("\n\nPlease type: \n<b>The name of ...</b>, or\n/list  -  To know the list of... \n/help -  To have support\n/site  -  To visit our website");
+      var msg_start_1 = i18n.__("Welcome {{name}}, \nI'm <b>CHITTI, The Microbot </b> speed 1 terahertz memory 1 zettabyte", { name: msg.from.first_name });
+      var msg_start_2 = i18n.__("\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie - To know any movie details \n/game  - To play superstar games \n\nVisit @RajiniBot for more features");
       
       bot.sendMessage(msg.chat.id, msg_start_1 + msg_start_2, {
           parse_mode: "HTML"
         }
       );
     });	
+
+    // Start Message i18n
+    bot.onText(/\/help/, (msg) => {
+    
+      if (msg.from.hasOwnProperty('language_code') && msg.from.language_code!=('undefined')) {
+        var str = msg.from.language_code.toLowerCase();
+        var code = str.substring(0, 2);
+        i18n.setLocale(code);
+      }
+      
+      var msg_start_1 = i18n.__("Welcome {{name}}, \nI'm <b>CHITTI, The Microbot </b> speed 1 terahertz memory 1 zettabyte", { name: msg.from.first_name });
+      var msg_start_2 = i18n.__("\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie - To know any movie details \n/game  - To play superstar games \n\nVisit @RajiniBot for more features");
+      
+      bot.sendMessage(msg.chat.id, msg_start_1 + msg_start_2, {
+          parse_mode: "HTML"
+        }
+      );
+    });	
+ 
+  // bot.on('message', function (message) {
+//   if (message.new_chat_members != undefined) {
+//     bot.sendMessage(message.chat.id, message.new_chat_member.username + " joined!");
+//   }else{
+//       bot.sendMessage(message.chat.id, "Blacksheep");
+//   }
+// });
+
+bot.on('message',function(msg, match){
+  // console.log(msg);
+
+  var chatId = msg.chat.id;
+  // var messageId = msg.message_id;
+
+  if(msg.new_chat_members != undefined){
+  var newUserName = msg.new_chat_member.username;
+  var newUserId = msg.new_chat_member.id;
+  var firstName = msg.new_chat_member.first_name;
+      
+    // bot.deleteMessage(msg.chat.id, messageId);
+    bot.sendSticker(msg.chat.id, 'CAACAgUAAxkBAAIGhl7QIV1M0U-mvnbc-U3hRrWU7AmFAAIKAAPx1LY3bze4vWU1BawZBA');
+    bot.sendMessage(msg.chat.id, "Hello " + firstName + ", \nI'm <b>CHITTI, The Microbot </b> speed 1 terahertz memory 1 zettabyte. \n\nWelcome to " + msg.chat.title + "\n\nPlease type: \n<b>The name of Thalaivar movie you want to watch...</b>, or type \n/movie - To know any movie details \n/game  - To play superstar games \n\nVisit @RajiniBot for more features", {parse_mode:'HTML'});
+          }
+      });
+
+// bot.on('message', (msg) => {
+    
+//   var what = "idiot";
+//   if (msg.text.includes(what)) {
+//   bot.kickChatMember(msg.chat.id,  msg.from.id);
+//   }    
+  
+//   });
+
+bot.on('message', (msg) => {
+var Hi = "hi";
+if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
+    bot.sendMessage(msg.chat.id, "Hello " + msg.from.first_name);
+}
+var bye = "bye";
+if (msg.text.toString().toLowerCase().includes(bye)) {
+    bot.sendMessage(msg.chat.id, "Hope to see you around again , " + msg.from.first_name);
+} 
+
+var bye = "hi chitti";
+if (msg.text.toString().toLowerCase().includes(bye)) {
+    bot.sendMessage(msg.chat.id, "Would you like to watch any #Thalaivar movies? Type the #movie name !!");
+} 
+// var robot = "athie";
+// if (msg.text.indexOf(robot) === 0) {
+//     // bot.sendPhoto(msg.chat.id, 'AgACAgUAAxkBAAIGhV7QIKGEaro-wZSD_vkkTOBdqgKGAAIYqTEbJvOJVkLYMh0crtvqunsda3QAAwEAAwIAA20AA5MlAQABGQQ', {caption: "athie is a superhero"})
+//     bot.sendSticker(msg.chat.id, 'CAACAgUAAxkBAAIGhl7QIV1M0U-mvnbc-U3hRrWU7AmFAAIKAAPx1LY3bze4vWU1BawZBA')
+//     bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
+//     const fileId = getFileIdSomehow();
+//     bot.sendDocument(chatId, fileId);
+// }
+});  
+
+// ---------- Movie Code ----------
+var request = require('request');
+
+bot.onText(/\/movie (.+)/,function(msg,match){
+    var chatId = msg.chat.id;
+    var movie = match[1];
+    request(`http://www.omdbapi.com/?apikey=aea138e7&t=${movie}`,function(error,response,body){
+        if(!error && response.statusCode == 200){
+          bot.sendMessage(chatId, '_Looking for_ ' + movie + '_Details_ ...', {parse_mode:'Markdown'})
+          .then(function(msg){
+            var res = JSON.parse(body);
+            bot.sendPhoto(chatId, res.Poster,{caption: 'Result : \nTitle: ' + res.Title + '\nYear: ' + res.Year + '\nRated: ' + res.Rated + '\nReleased: ' + res.Released});
+        })
+      }
+    });
+});    
 
 // ---------- LOGGIN FEATURES ----------
 const XRegExp = require('xregexp');
@@ -111,7 +204,7 @@ bot.on('message', (msg) => {
 				bot.sendMessage(msg.chat.id, mex.reply);
 			}else if(mex.type == "image"){
 				if(mex.reply.includes("gif")){
-					bot.sendDocument(msg.chat.id, mex.reply);
+          bot.sendDocument(msg.chat.id, mex.reply,);
 				}else{
 					bot.sendPhoto(msg.chat.id, mex.reply);
 				}
@@ -121,7 +214,8 @@ bot.on('message', (msg) => {
       }else if(mex.type == "video"){
 				bot.sendVideo(msg.chat.id, mex.reply);
       }else if(mex.type == "document"){
-				bot.sendDocument(msg.chat.id, mex.reply);
+        bot.sendDocument(msg.chat.id, mex.reply);
+        bot.sendMessage(msg.chat.id, '_You can also download other versions from @rajinibot_', {parse_mode:'Markdown'});
       }else if(mex.type == "function"){
 				mex.reply(bot); //let function handle the answer
 			}
@@ -160,23 +254,6 @@ function controlMessage(message){
 	
 	return found;
 }
-
-bot.on('message', (msg) => {
-var Hi = "hi";
-if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
-    bot.sendMessage(msg.chat.id, "Hello " + msg.from.first_name);
-}
-var bye = "bye";
-if (msg.text.toString().toLowerCase().includes(bye)) {
-    bot.sendMessage(msg.chat.id, "Hope to see you around again , " + msg.from.first_name);
-}    
-var robot = "athie";
-if (msg.text.indexOf(robot) === 0) {
-    bot.sendMessage(msg.chat.id, "Yes I'm robot but not in that way!");
-    const fileId = getFileIdSomehow();
-    bot.sendDocument(chatId, fileId);
-}
-});
 
 // ---------- Bookmark Code ----------
 // const ref = firebase.database().ref();
@@ -225,23 +302,6 @@ if (msg.text.indexOf(robot) === 0) {
 //   });
 // });
 
-// ---------- Movie Code ----------
-var request = require('request');
-
-bot.onText(/\/movie (.+)/,function(msg,match){
-    var chatId = msg.chat.id;
-    var movie = match[1];
-    request(`http://www.omdbapi.com/?apikey=aea138e7&t=${movie}`,function(error,response,body){
-        if(!error && response.statusCode == 200){
-          bot.sendMessage(chatId, '_Looking for_ ' + movie + '...', {parse_mode:'Markdown'})
-          .then(function(msg){
-            var res = JSON.parse(body);
-            bot.sendPhoto(chatId, res.Poster,{caption: 'Result : \nTitle: ' + res.Title + '\nYear: ' + res.Year + '\nRated: ' + res.Rated + '\nReleased: ' + res.Released});
-        })
-      }
-    });
-});
-
 // ---------- nase keyboards ----------
 // const url = 'https://launchlibrary.net/1.3/launch';
 // const trigger = 'I want to travel!';
@@ -268,107 +328,107 @@ bot.onText(/\/movie (.+)/,function(msg,match){
 
  // ---------- ex reply keyboards ----------
 
-const { ReplyManager } = require("node-telegram-operation-manager");
-const keyboardWrapper = require("node-telegram-keyboard-wrapper");
+// const { ReplyManager } = require("node-telegram-operation-manager");
+// const keyboardWrapper = require("node-telegram-keyboard-wrapper");
 
-//*************************//
-//* EXECUTE THIS, TRUST ME*//
-//*************************//
-const reply = new ReplyManager();
-const keyboards = [
-    new keyboardWrapper.ReplyKeyboard("I hate replies"),
-    (new keyboardWrapper.ReplyKeyboard()).addRow("I hate replies", "I love replies"),
-    new keyboardWrapper.ReplyKeyboard("Show me potatoes!")
-];
-bot.onText(/\/multireply/, (message) => {
-    bot.sendMessage(message.from.id, `Hey there! 😎 Some replies got registered! Follow my instructions to discover how this works. Send me a message now!`);
-    // I could use any identifier I want, but I suggest to use user.id.
-    // Command is an arbitrary string and optional string
-    // If you don't want to pass a command, set it as empty
-    reply
-        .register(message.from.id, (someData) => {
-        bot.sendMessage(message.from.id, "Great! Now send me another message.");
-    })
-        .register(message.from.id, (someData) => {
-        let nextText = "See? You can register your replies easily by setting in your message listener the following check."
-            + "\nAssuming you are using [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) and you istantiated globally ReplyManager, you can do it by:"
-            + "\n\n```"
-            + "\nconst reply = new ReplyManager();"
-            + "\nbot.on(\"message\", (msg) => {"
-            + "\n\t// this requires the id and let you push optional data in form of object."
-            + "\n\tif (reply.expects(msg.from.id)) {"
-            + "\n\t\tlet { text, entities } = msg;"
-            + "\n\t\treply.execute(msg.from.id, { text, entities });"
-            + "\n\t}"
-            + "\n});```"
-            + "\n\nNow send me this text: \"I hate replies\"";
-        let messageOpts = Object.assign({
-            parse_mode: "Markdown",
-            disable_web_page_preview: true
-        }, keyboards[0].open({ resize_keyboard: true }));
-        bot.sendMessage(message.from.id, nextText, messageOpts);
-    })
-        .register(message.from.id, (someData) => {
-        let nextText;
-        const messageOpts1 = Object.assign({
-            parse_mode: "Markdown",
-        }, keyboards[1].open({ resize_keyboard: true }));
-        const messageOpts2 = Object.assign({
-            parse_mode: "Markdown",
-        }, keyboards[2].open({ resize_keyboard: true }));
-        if (someData.text === "I love replies") {
-            nextText = "✔ Good! Conditional checks can use optional data that can be passed at your own discretion through `reply.execute()` (as above)"
-                + "\n\nThis is how you can set them:"
-                + "\n\n\t\`.add(identifier, (someData?: RegisteredResult) => { ... })\`"
-                + "\n\nYou can also set some data to be passed (or accumulated) through replies."
-                + " Instead of returning an object with `{ repeat: true }` or _undefined_, return an object with any value you want."
-                + "\nFor this example, I'm going to return an object with a property called \"potatoes\"."
-                + "\nYou can also return datas from a failed session, inserting in the same object of `{ repeat: true }`, other keys/values."
-                + "\n\nNow send me another message with written inside *Show me potatoes!*.";
-            bot.sendMessage(message.from.id, nextText, messageOpts2);
-            return {
-                potatoes: "I like them fried!"
-            };
-        }
-        else {
-            nextText = "❌ Great, but the required text in this reply was \"I love replies\"."
-                + "\n\nYou can make repeat a reply until it satisfies your conditions by returning `{ repeat: true }` inside the function."
-                + "\n\nIf you omit that key or return it as true or omit the full return, the reply will be considered as to not be repeated."
-                + "\n\nNow try again. This time try to send me both \"I have replies\" (again) and \"I love replies\" and see what happen.";
-            bot.sendMessage(message.from.id, nextText, messageOpts1);
-            return { repeat: true };
-        }
-    })
-        .register(message.from.id, (someData) => {
-        if (someData.text !== "Show me potatoes!") {
-            bot.sendMessage(message.from.id, "Nope! The next is not correct! Try again.");
-            return { repeat: true };
-        }
-        let nextText = "You can access them by using `someData.previousData`."
-            + "\nSo, we will access to potatoes by saying: `someData.previousData.potatoes`."
-            + "\nAwesome! Isn't it?"
-            + "\n\nNow send me another message!";
-        bot.sendMessage(message.from.id, nextText, Object.assign({}, keyboards[2].close(), { parse_mode: "Markdown" }));
-    })
-        .register(message.from.id, (someData) => {
-        bot.sendMessage(message.from.id, "You are the best! Start now by looking at the [documentation](https://github.com/alexandercerutti/node-telegram-operation-manager#class_reply). 😉 Hope you have enjoyed the tutorial!", { parse_mode: "Markdown" });
-    });
-});
-bot.on("message", (msg) => {
-    // this requires the id and let you push optional data in form of object.
-    if (!hasEntity("bot_command", msg.entities) && reply.expects(msg.from.id)) {
-        let { text, entities } = msg;
-        reply.execute(msg.from.id, { text, entities });
-    }
-});
-function hasEntity(entity, entities) {
-    if (!entities || !entities.length) {
-        return false;
-    }
-    return entities.some(e => e.type === entity);
-}
+// //*************************//
+// //* EXECUTE THIS, TRUST ME*//
+// //*************************//
+// const reply = new ReplyManager();
+// const keyboards = [
+//     new keyboardWrapper.ReplyKeyboard("I hate replies"),
+//     (new keyboardWrapper.ReplyKeyboard()).addRow("I hate replies", "I love replies"),
+//     new keyboardWrapper.ReplyKeyboard("Show me potatoes!")
+// ];
+// bot.onText(/\/multireply/, (message) => {
+//     bot.sendMessage(message.from.id, `Hey there! 😎 Some replies got registered! Follow my instructions to discover how this works. Send me a message now!`);
+//     // I could use any identifier I want, but I suggest to use user.id.
+//     // Command is an arbitrary string and optional string
+//     // If you don't want to pass a command, set it as empty
+//     reply
+//         .register(message.from.id, (someData) => {
+//         bot.sendMessage(message.from.id, "Great! Now send me another message.");
+//     })
+//         .register(message.from.id, (someData) => {
+//         let nextText = "See? You can register your replies easily by setting in your message listener the following check."
+//             + "\nAssuming you are using [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api) and you istantiated globally ReplyManager, you can do it by:"
+//             + "\n\n```"
+//             + "\nconst reply = new ReplyManager();"
+//             + "\nbot.on(\"message\", (msg) => {"
+//             + "\n\t// this requires the id and let you push optional data in form of object."
+//             + "\n\tif (reply.expects(msg.from.id)) {"
+//             + "\n\t\tlet { text, entities } = msg;"
+//             + "\n\t\treply.execute(msg.from.id, { text, entities });"
+//             + "\n\t}"
+//             + "\n});```"
+//             + "\n\nNow send me this text: \"I hate replies\"";
+//         let messageOpts = Object.assign({
+//             parse_mode: "Markdown",
+//             disable_web_page_preview: true
+//         }, keyboards[0].open({ resize_keyboard: true }));
+//         bot.sendMessage(message.from.id, nextText, messageOpts);
+//     })
+//         .register(message.from.id, (someData) => {
+//         let nextText;
+//         const messageOpts1 = Object.assign({
+//             parse_mode: "Markdown",
+//         }, keyboards[1].open({ resize_keyboard: true }));
+//         const messageOpts2 = Object.assign({
+//             parse_mode: "Markdown",
+//         }, keyboards[2].open({ resize_keyboard: true }));
+//         if (someData.text === "I love replies") {
+//             nextText = "✔ Good! Conditional checks can use optional data that can be passed at your own discretion through `reply.execute()` (as above)"
+//                 + "\n\nThis is how you can set them:"
+//                 + "\n\n\t\`.add(identifier, (someData?: RegisteredResult) => { ... })\`"
+//                 + "\n\nYou can also set some data to be passed (or accumulated) through replies."
+//                 + " Instead of returning an object with `{ repeat: true }` or _undefined_, return an object with any value you want."
+//                 + "\nFor this example, I'm going to return an object with a property called \"potatoes\"."
+//                 + "\nYou can also return datas from a failed session, inserting in the same object of `{ repeat: true }`, other keys/values."
+//                 + "\n\nNow send me another message with written inside *Show me potatoes!*.";
+//             bot.sendMessage(message.from.id, nextText, messageOpts2);
+//             return {
+//                 potatoes: "I like them fried!"
+//             };
+//         }
+//         else {
+//             nextText = "❌ Great, but the required text in this reply was \"I love replies\"."
+//                 + "\n\nYou can make repeat a reply until it satisfies your conditions by returning `{ repeat: true }` inside the function."
+//                 + "\n\nIf you omit that key or return it as true or omit the full return, the reply will be considered as to not be repeated."
+//                 + "\n\nNow try again. This time try to send me both \"I have replies\" (again) and \"I love replies\" and see what happen.";
+//             bot.sendMessage(message.from.id, nextText, messageOpts1);
+//             return { repeat: true };
+//         }
+//     })
+//         .register(message.from.id, (someData) => {
+//         if (someData.text !== "Show me potatoes!") {
+//             bot.sendMessage(message.from.id, "Nope! The next is not correct! Try again.");
+//             return { repeat: true };
+//         }
+//         let nextText = "You can access them by using `someData.previousData`."
+//             + "\nSo, we will access to potatoes by saying: `someData.previousData.potatoes`."
+//             + "\nAwesome! Isn't it?"
+//             + "\n\nNow send me another message!";
+//         bot.sendMessage(message.from.id, nextText, Object.assign({}, keyboards[2].close(), { parse_mode: "Markdown" }));
+//     })
+//         .register(message.from.id, (someData) => {
+//         bot.sendMessage(message.from.id, "You are the best! Start now by looking at the [documentation](https://github.com/alexandercerutti/node-telegram-operation-manager#class_reply). 😉 Hope you have enjoyed the tutorial!", { parse_mode: "Markdown" });
+//     });
+// });
+// bot.on("message", (msg) => {
+//     // this requires the id and let you push optional data in form of object.
+//     if (!hasEntity("bot_command", msg.entities) && reply.expects(msg.from.id)) {
+//         let { text, entities } = msg;
+//         reply.execute(msg.from.id, { text, entities });
+//     }
+// });
+// function hasEntity(entity, entities) {
+//     if (!entities || !entities.length) {
+//         return false;
+//     }
+//     return entities.some(e => e.type === entity);
+// }
 
- // ---------- games ----------
+ //---------- games ----------
 
  bot.onText(/help2/, (msg) => bot.sendMessage(msg.chat.id, "This bot implements a who wants to be a millionaire game. Say /game if you want to play."));
  bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName));
@@ -380,7 +440,7 @@ function hasEntity(entity, entities) {
   //   bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   // } else {
     queries[query.id] = query;
-    let gameurl = "https://chittimicrobot.herokuapp.com/index.html?id="+query.id;
+    let gameurl = "https://chittimicrobot.herokuapp.com/controller.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
       url: gameurl
@@ -416,7 +476,7 @@ server.get("/highscore/:score", function(req, res, next) {
 
 server.listen(port);
 
-// ---------- game 2 Robot Runner ----------
+//---------- game 2 Crorepati ----------
 
 bot.onText(/game/, (msg) => bot.sendGame(msg.chat.id, gameName2));
 
@@ -427,7 +487,7 @@ bot.on("callback_query", function (query) {
   //   bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
   // } else {
     queries[query.id] = query;
-    let gameurl = "https://chittimicrobot.herokuapp.com/controller.html?id="+query.id;
+    let gameurl = "https://chittimicrobot.herokuapp.com/index.html?id="+query.id;
     bot.answerCallbackQuery({
       callback_query_id: query.id,
       url: gameurl
@@ -442,33 +502,33 @@ bot.on("inline_query", function(iq) {
 
 server.use(express.static(path.join(__dirname, 'crorepati')));
 
-bot.on('inline_query', (msg) => {
-  let query = encodeURIComponent(msg.query.trim());
-  bot.answerInlineQuery(msg.id, [{
-      type: 'article',
-      id: query + '_google',
-      title: 'Google',
-      input_message_content: {
-          message_text: 'http://lmgtfy.com/?q=' + query,
-      }
-  },
-  {
-      type: 'article',
-      id: query + '_bing',
-      title: 'Bing',
-      input_message_content: {
-          message_text: 'http://lmgtfy.com/?s=b&q=' + query,
-      }
-  },
-  {
-      type: 'article',
-      id: query + '_yahoo',
-      title: 'Yahoo',
-      input_message_content: {
-      message_text: 'http://lmgtfy.com/?s=y&q=' + query,
-  }
-  }]);
-});
+// bot.on('inline_query', (msg) => {
+//   let query = encodeURIComponent(msg.query.trim());
+//   bot.answerInlineQuery(msg.id, [{
+//       type: 'article',
+//       id: query + '_google',
+//       title: 'Google',
+//       input_message_content: {
+//           message_text: 'http://lmgtfy.com/?q=' + query,
+//       }
+//   },
+//   {
+//       type: 'article',
+//       id: query + '_bing',
+//       title: 'Bing',
+//       input_message_content: {
+//           message_text: 'http://lmgtfy.com/?s=b&q=' + query,
+//       }
+//   },
+//   {
+//       type: 'article',
+//       id: query + '_yahoo',
+//       title: 'Yahoo',
+//       input_message_content: {
+//       message_text: 'http://lmgtfy.com/?s=y&q=' + query,
+//   }
+//   }]);
+// });
 
 // ---------- keyboard ----------
 
@@ -515,6 +575,13 @@ bot.on('inline_query', (msg) => {
 //     }
 // });
 // bot.on("callback_query", (query) => {
+//       if(query.data === 'Works2'){
+//           bot.sendMessage(query.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+//     }else if(query.data === '3'){
+//       bot.sendMessage(query.chat.id, "Hey there again!");
+//     }
+//     });
+// bot.on("callback_query", (query) => {
 //   bot.answerCallbackQuery(query.id, { text: "Action received!" })
 //       .then(function () {
 //       bot.sendMessage(query.from.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
@@ -543,47 +610,58 @@ bot.on('inline_query', (msg) => {
 //bot.sendMessage(chatId, resp);
 //bot.sendPhoto(chatId, resp);
 
-bot.onText(/\/athie/, (msg) => {
-  bot.sendMessage(msg.chat.id,'Got it, in which category?', {
-    reply_markup: {
-      inline_keyboard: [[
-        {
-          text: 'Development',
-          callback_data: '1'
-        },{
-          text: 'Music',
-          callback_data: '2'
-        },{
-          text: 'Cute monkeys',
-          callback_data: '3'
-        }
-      ]]
-    }
-  });
-});
-
-bot.on("callback_query", (callbackQuery) => {
-  const message = callbackQuery.message;
-  if(callback_data == '2'){
-    bot.sendMessage(message.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
-}else if(callback_data == '3'){
-bot.sendMessage(message.chat.id, "Hey there again!");
-}
-});
-  
 // bot.onText(/\/athie/, (msg) => {
+//   bot.sendMessage(msg.chat.id,'Got it, in which category?', {
+//     reply_markup: {
+//       inline_keyboard: [[
+//         {
+//           text: 'Development',
+//           callback_data: '1'
+//         },{
+//           text: 'Music',
+//           callback_data: '2'
+//         },{
+//           text: 'Cute monkeys',
+//           callback_data: '3'
+//         }
+//       ]]
+//     }
+//   });
+// });
+
+// bot.on("callback_query", (callbackQuery) => {
+//   const message = callbackQuery.message;
+//   if(callbackQuery.data == '2'){
+//     bot.sendMessage(message.chat.id, "Hey there! You clicked on an inline button! ;) So, as you saw, the support library works!");
+// }else if(callbackQuery.data == '3'){
+// bot.sendMessage(message.chat.id, "Hey there again!");
+// }
+// });
+  
+// bot.onText(/\/athie2/, (msg) => {
 //   var opts ={
 //        reply_markup: {
 //            inline_keyboard: [
 //                [{text:"지옥문", url: "http://masca.dothome.co.kr/"}],
 //                [{text:"엔더월드 가는법", callback_data: "2"}],
-//                [{text:"TNT 만드는법", callback_data: "3"}],
+//                [{text:"TNT 만드는법", callback_data: "13"}],
             
 //            ]
 //        } 
        
 //    };
 //     bot.sendMessage(msg.from.id,"이중 하나를 골라주세요",opts);
+// });
+
+// bot.on("callback_query", function(data){
+//   const chatId = msg.id;
+//   console.log(data);
+//   // Get the callback data specified
+//  let callback_data = data.data
+//  if(callback_data == "13") {
+
+//    bot.answerCallbackQuery(chatId,'hello'); 
+//  }
 // });
 
 // bot.on("callback_query", (query) => {

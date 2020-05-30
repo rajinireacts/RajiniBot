@@ -1,0 +1,352 @@
+#nosignaltext{
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 5vw;
+  margin: 0px;
+  font-family: sans-serif;
+  color: white;
+}
+#nosignal{
+  z-index: 1;
+  position: absolute;
+  background-color: red;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#nosignalimg{
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 40%;
+  height: auto;
+}
+#footer{
+  position: absolute;
+  bottom: 0.5px;
+  left: 2px;
+  font-family: arial;
+  color: white;
+  font-size: 0.7vw;
+  margin: 0px;
+}
+#countdown{
+  border: none;
+  color: orange;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 20vh;
+  background-color: blue;
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 17%;
+  left: 20%;
+  text-align: center;
+  display: none;
+}
+.audienceinputboxes{
+  width: 20%;
+  height: 3vh;
+  position: relative;
+  left: 5%;
+  font-size: 1.5vw;
+}
+#phoneresults {
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 4vh;
+  background-color: green;
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 37vh;
+  left: 2%;
+  text-align: center;
+  display: none;
+}
+#setuphelp {
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 4vh;
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 7vh;
+  left: 2%;
+  text-align: center;
+}
+#helptext {
+  font-size: 3vw;
+}
+#audienceresults, #audienceinput{
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 3vh;
+  background-color: blue;
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 17%;
+  left: 2%;
+  text-align: center;
+  display: none;
+}
+#prizedetails{
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 4vh;
+  background-color: green;
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: 17%;
+  left: 2%;
+  text-align: center;
+  display: none;
+}
+#syncfailed{
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: arial;
+}
+#takemoneybutton{
+  background-color: red;
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  display: none;
+  left: 35%;
+  cursor: pointer;
+}
+#newquestionbutton{
+  background-color: orange;
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  display: none;
+  left: 5%;
+  cursor: pointer;
+}
+#resetbutton{
+  background-color: SteelBlue;
+  width: 70%;
+  height: auto%;
+  position: absolute;
+  top: 30%;
+  display: none;
+  left: 2%;
+  cursor: pointer;
+}
+#entercodebutton{
+  font-size: 1.5vw;
+  background-color: orange;
+  width: 25%;
+  height: 6%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  cursor: pointer;
+}
+#revealanswerbutton{
+  background-color: blue;
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: none;
+  cursor: pointer;
+  display: none;
+}
+#loadquestionbutton{
+  background-color: green;
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: none;
+  cursor: pointer;
+  display: none;
+}
+#codeinput{
+  width: 25%;
+  height: 5%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5vw;
+}
+#topicselect{
+  width: 35%;
+  height: 5%;
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  font-size: 1.5vw;
+}
+#modeselect{
+  width: 35%;
+  height: 6%;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  font-size: 1.5vw;
+  background-color: green;
+  color: white;
+}
+#startbutton{
+  background-color: orange;
+  width: 25%;
+  height: 11%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: none;
+  cursor: pointer;
+}
+#buttoncontainer{
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  width: 69vw;
+  height: 45vh;
+  border: solid black;
+}
+.button{
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vw;
+}
+#body{
+  background-color: MidnightBlue;
+}
+#lifelinestable{
+  border: none;
+  table-layout: fixed;
+  width: 70vw;
+  height: 6vw;
+  position: absolute;
+  left: 2vw;
+  bottom: 21vw
+}
+.lifelineimg{
+  width: 40%;
+  height: auto;
+  position: relative;
+  left: 30%;
+  display: block;
+  text-align: center;
+}
+#questiontable{
+  border: none;
+  table-layout: fixed;
+  width: 70vw;
+  position: absolute;
+  left: 2vw;
+  bottom: 2vw
+}
+#questiontable td {
+  width: 35vw;
+}
+.imgcontainer {
+  position: relative;
+  color: white;
+  font-family: arial;
+}
+.tableimg {
+  height: auto;
+  width: 100%;
+}
+#questiontext {
+  font-size: 2.2vw;
+  display: table-cell; 
+  text-align: center;
+  vertical-align: middle; 
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+.answertext {
+  font-size: 1.7vw;
+  display: table-cell; 
+  text-align: left;
+  vertical-align: middle; 
+  position: absolute;
+  top: 27%;
+  width: 80%;
+  height: 80%;
+}
+.answertextleft {
+  left: 12%;
+}
+.answertextright {
+  left: 4%;
+}
+#prizestable{
+  border: 1px solid white;
+  font-family: arial;
+  /*font-size: 3vw;*/
+  color: orange;
+  width: 25vw;
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+}
+#prizestable td {
+  height: 5.5vh;
+  width: 35vw;
+}
+.prizesA {
+  /*width: 6.5vw;*/
+  width: auto;
+  align: right;
+  height: 3vh;
+}
+.prizesB {
+  /*width: 2vw;*/
+  width: auto;
+  align: centre;
+  height: 3vh;
+}
+.prizesA {
+  /*width: 16.5vw;*/
+  width: auto;
+  align: left;
+  height: 3vh;
+}

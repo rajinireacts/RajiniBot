@@ -1,169 +1,169 @@
 ﻿var questionset = {
   "stage1": [
-    {"Q": "New Delhi is located in which country?",
-      "Y": "India",
-      "N1": "Pakistan",
-      "N2": "China",
-      "N3": "Japan"
+    {"Q": "தலைவர் ரஜினியின் முதல் படத்தின் பெயர் என்ன?",
+      "Y": "அபூர்வ ராகங்கள்",
+      "N1": "பைரவி",
+      "N2": "மூன்று முகம்",
+      "N3": "வீரா"
     },
-    {"Q": "What is the name of the virtual assistant on iPhones?",
-      "Y": "Siri",
-      "N1": "Sarah",
-      "N2": "Shelly",
-      "N3": "Sophie"
+    {"Q": "தலைவர் ரஜினி இது வரை எத்தனை மொழி திரைப்படங்களில் நடித்துள்ளார்?",
+      "Y": "7",
+      "N1": "1",
+      "N2": "6",
+      "N3": "3"
     },
-    {"Q": "Which of these words appears in the NATO phonetic alphabet?",
-      "Y": "Golf",
-      "N1": "Basketball",
-      "N2": "Netball",
-      "N3": "Hockey"
+    {"Q": "தலைவர் ரஜினியை 'SUPER STAR' என்று வசனத்தில் வைத்து பேசிய திரைப்படம் என்ன?",
+      "Y": "பில்லா",
+      "N1": "பைரவி",
+      "N2": "பாட்ஷா",
+      "N3": "தீ"
     },
-    {"Q": "Which number is equal to 5 times the sum of its digits?",
-      "Y": "45",
-      "N1": "20",
-      "N2": "39",
-      "N3": "67"
+    {"Q": "தலைவரை 'மக்கள் தலைவர்' என்று முதன்முதலில் அழைத்தது எந்த படத்தில்?",
+      "Y": "பாண்டியன்",
+      "N1": "ரங்கா",
+      "N2": "வீரா",
+      "N3": "மன்னன்"
     },
-    {"Q": "Which of these is a German city?",
-      "Y": "Hamburg",
-      "N1": "Himburg",
-      "N2": "Homburg",
-      "N3": "Humburg"
+    {"Q": "தலைவர் ரஜினியின் 100வது படம் எது?",
+      "Y": "ஸ்ரீ ராகவேந்திரர்",
+      "N1": "நெற்றிக்கண்",
+      "N2": "தில்லு முல்லு",
+      "N3": "ராஜாதி ராஜா"
     },
     {
-      "Q": "Which Disney film features the song 'Under the Sea'?",
-      "Y": "The Little Mermaid",
-      "N1": "Sleeping Beauty",
-      "N2": "Bambi",
-      "N3": "The Jungle Book"
+      "Q": "தலைவர் ரஜினி முதன்முதலில்  இரட்டை வேடங்களில் நடித்த  திரைப்படம் எது?",
+      "Y": "பில்லா",
+      "N1": "ஜானி",
+      "N2": "மூன்று முகம்",
+      "N3": "ராஜாதி ராஜா"
     }
   ],
   "stage2": [
-    {"Q": "What is the name of the dog in 'The Famous Five'?",
-      "Y": "Timmy",
-      "N1": "Tommy",
-      "N2": "Tammy",
-      "N3": "Tummy"
+    {"Q": "தலைவர் ரஜினி முதன்முதலில் ரஜினி என்ற கதாப்பாத்திரத்தின் பெயரில் நடித்த முதல் திரைப்படம் எது?",
+      "Y": "ஆடு புலி ஆட்டம் ",
+      "N1": "அன்புள்ள ரஜினிகாந்த் ",
+      "N2": "இறைவன் கொடுத்த வரம்",
+      "N3": "நன்றி மீண்டும் வருக "
     },
-    {"Q": "In the 'Harry Potter' books, which house was Hermione in?",
-      "Y": "Gryffindor",
-      "N1": "Hufflepuff",
-      "N2": "Ravenclaw",
-      "N3": "Slytherin"
+    {"Q": "தலைவர் ரஜினி முதன்முதலில் நடித்த இந்தி திரைப்படம் எது?",
+      "Y": "ஆந்தா கனூன்",
+      "N1": "ஜீத் ஹமாரி ",
+      "N2": "மேரி அதாலத்",
+      "N3": "கங்வா"
     },
-    {"Q": "What links the words 'kayak' and 'racecar'?",
-      "Y": "Palindromes",
-      "N1": "Oxymorons",
-      "N2": "Onopatopoeia",
-      "N3": "Anagrams"
+    {"Q": "தலைவர் ரஜினி கடைசியாக  நடித்த நேரடி தெலுங்கு மொழி படம் எது ?",
+      "Y": "கதாநாயகடு",
+      "N1": "நியாயம் மீரே செப்பாளி",
+      "N2": "ஜீவன போராட்டம்",
+      "N3": "பெத்தராயுடு"
     },
-    {"Q": "Until 2017, Charles Darwin appeared on an English banknote. What denomination was it?",
-      "Y": "£10",
-      "N1": "£5",
-      "N2": "£20",
-      "N3": "£50"
+    {"Q": "தலைவர் ரஜினி யின் பெயரை, புகைப்படங்களை முதன்முதலில் ஒரு  திரைப்படத்தில் உபயோகப்படுத்திய (Reference) திரைப்படம் எது?",
+      "Y": "குடும்பம் ஒரு கதம்பம்",
+      "N1": "சிலுக்குவார்பட்டி சிங்கம்",
+      "N2": "கோபாலா கோபாலா ",
+      "N3": "இவன்"
     },
-    {"Q": "What were the Seven Dwarfs mining for?",
-      "Y": "Diamonds",
-      "N1": "Gold",
-      "N2": "Silver",
-      "N3": "Quartz"
+    {"Q": "தலைவர் ரஜினி - ரஜினியாக  (கதாப்பாத்திரத்தின் பெயர் + கௌரவ தோற்றம்)  எத்தனை படங்களில் நடித்துள்ளார்?",
+      "Y": "11",
+      "N1": "5",
+      "N2": "10",
+      "N3": "9"
     },
-    {"Q": "In the nursery rhyme, what is Jack's head treated with after he falls down the hill?",
-      "Y": "Vinegar and brown paper",
-      "N1": "Bandages",
-      "N2": "Margarine",
-      "N3": "Cream"
+    {"Q": "தலைவர் ரஜினி இது வரை எத்தனை பாடல்கள் பாடியுள்ளார்?",
+      "Y": "2",
+      "N1": "1",
+      "N2": "3",
+      "N3": "4"
     },
-    {"Q": "Someone who suffurs from photoic sneeze reflex sneezes in response to what?",
-      "Y": "Sunlight",
-      "N1": "Loud noises",
-      "N2": "Salty foods",
-      "N3": "Strange smells"
+    {"Q": "தலைவர் ரஜினியின் முதல் Colour திரைப்படம் எது?",
+      "Y": "16வயதினிலே",
+      "N1": "சங்கர் சலீம் சைமன்",
+      "N2": "சகோதர சவால்",
+      "N3": "ஆயிரம் ஜென்மங்கள்"
     },
     {
-      "Q": "Which city will host the 2020 Summer Olympics?",
-      "Y": "Tokyo",
-      "N1": "Japan",
-      "N2": "Rio",
-      "N3": "Rome"
+      "Q": "தலைவர் ரஜினி ஸ்ரீ ராகவேந்திரராக எத்தனை படங்களில் நடித்துள்ளார்?",
+      "Y": "2",
+      "N1": "1",
+      "N2": "3",
+      "N3": "4"
     }
   ],
   "stage3": [
-    {"Q": "Which of these is in group 0 of the Periodic Table?",
-      "Y": "Neon",
-      "N1": "Fluorine",
-      "N2": "Hydrogen",
-      "N3": "Oxygen"
+    {"Q": "தலைவர் ரஜினியின் திரைப்படங்களை அதிகமாக இயக்கிய இயக்குனர் யார்?",
+      "Y": "S P முத்துராமன்",
+      "N1": "K.S.ரவிக்குமார்",
+      "N2": "சங்கர்",
+      "N3": "ராஜசேகர்"
     },
-    {"Q": "The Nordic Council has no members from which of these countries?",
-      "Y": "Estonia",
-      "N1": "Greenland",
-      "N2": "Iceland",
-      "N3": "Finland"
-    },
-    {
-      "Q": "When did humans last land on the moon?",
-      "Y": "1972",
-      "N1": "1971",
-      "N2": "1973",
-      "N3": "1974"
+    {"Q": "தலைவர் ரஜினி எந்த ஆண்டு பத்மபூஷன் விருது வாங்கினார்?",
+      "Y": "2000",
+      "N1": "1998",
+      "N2": "1999",
+      "N3": "1997"
     },
     {
-      "Q": "In relation to its epicentre, where is an earthquake's hypocentre?",
-      "Y": "Directly below",
-      "N1": "2 miles across land",
-      "N2": "The nearest ocean",
-      "N3": "The nearest village"
+      "Q": "சிவாஜியின் 'பைலட் ப்ரேம்நாத்' திரைப்படத்திற்கு பிறகு இந்தியா இலங்கை கூட்டு தயாரிப்பில் உருவான தலைவர் திரைப்படம் எது?",
+      "Y": "தீ",
+      "N1": "பில்லா",
+      "N2": "விடுதலை",
+      "N3": "ஜானி"
     },
     {
-      "Q": "Who invented a test which could define a computer as being 'sentient'?",
-      "Y": "Alan Turing",
-      "N1": "Niels Bohr",
-      "N2": "Steve Jobs",
-      "N3": "Bill Gates"
+      "Q": "தலைவர் ரஜினியுடன் சிவாஜி நடித்த முதல் படம் எது?",
+      "Y": "ஜஸ்டிஸ் கோபிநாத்",
+      "N1": "படிக்காதவன்",
+      "N2": "படையப்பா",
+      "N3": "நான் வாழவைப்பேன்"
+    },
+    {
+      "Q": "தலைவர் ரஜினியின் முதல் CinemaScope திரைப்படம் எது?",
+      "Y": "அலாவுதீனும் அற்புத விளக்கும்",
+      "N1": "குப்பத்து ராஜா",
+      "N2": "நினைத்தாலே இனிக்கும்",
+      "N3": "பிரியா"
     }
   ],
   "stage4": [
-    {"Q": "Svalbard, an island in the Arctic Ocean, is officially part of which country?",
-      "Y": "Svalbard and Jan Mayen",
-      "N1": "Svalbard and Norway",
-      "N2": "Svalbard and Iceland",
-      "N3": "Svalbard"
+    {"Q": "தலைவர் ரஜினியின் திரைப்படத்திற்கு இளையராஜா இசையமைத்த கடைசி திரைப்படம் எது?",
+      "Y": "வீரா",
+      "N1": "எஜமான்",
+      "N2": "உழைப்பாளி",
+      "N3": "பாண்டியன்"
     },
-    {"Q": "Which Asian country has a population of around 75 million?",
-      "Y": "Iran",
-      "N1": "Iraq",
-      "N2": "Vietnam",
-      "N3": "Burma"
-    },
-    {
-      "Q": "How many British towns have a name ending with 'mouth'?",
-      "Y": "29",
-      "N1": "9",
-      "N2": "19",
-      "N3": "39"
+    {"Q": "தலைவர் ரஜினியுடன் அதிக திரைப்படங்களில் நடித்த நகைச்சுவை நடிகர் யார்?",
+      "Y": "Y G மகேந்திரன்",
+      "N1": "கவுண்டமணி",
+      "N2": "வடிவேலு",
+      "N3": "ஜனகராஜ்"
     },
     {
-      "Q": "The 'Simplon Pass' connects Switzerland and which other country?",
-      "Y": "Italy",
-      "N1": "Austria",
-      "N2": "France",
-      "N3": "Germany"
+      "Q": "நாவலை அடிப்படையாக வைத்து எடுக்கப்பட்ட முதல் தலைவர் ரஜினியின் படம் எது?",
+      "Y": "புவனா ஒரு கேள்விக்குறி",
+      "N1": "முள்ளும் மலரும்",
+      "N2": "காயத்ரி",
+      "N3": "வணக்கத்துக்குரிய காதலியே"
     },
     {
-      "Q": "What is the minimum number of strokes required to score 147 in a game of snooker?",
-      "Y": "36",
-      "N1": "22",
-      "N2": "17",
-      "N3": "47"
+      "Q": "தலைவர் ரஜினிக்காக பாடலில் பின்னணி குரல் கொடுத்த பாடகர் யார்?",
+      "Y": "M S விஸ்வநாதன்",
+      "N1": "S P பாலசுப்பிரமணியம்",
+      "N2": "K J யேசுதாஸ்",
+      "N3": "மலேசியா வாசுதேவன்"
     },
     {
-      "Q": "Which string of digits appears in the first 20 digits of pi?",
-      "Y": "6535",
-      "N1": "9262",
-      "N2": "4158",
-      "N3": "3572"
+      "Q": "தலைவர் ரஜினி கடைசியாக நடித்த கருப்பு வெள்ளை (Black & White) திரைப்படம் எது?",
+      "Y": "அவள் அப்படித்தான்",
+      "N1": "சதுரங்கம்",
+      "N2": "தப்பு தாளங்கள்",
+      "N3": "அவள் அப்படித்தான்"
+    },
+    {
+      "Q": "தலைவர் ரஜினி 1978ல் நடித்த மொத்த படங்களின் எண்ணிக்கை என்ன?",
+      "Y": "20",
+      "N1": "15",
+      "N2": "22",
+      "N3": "18"
     }
   ]
 };

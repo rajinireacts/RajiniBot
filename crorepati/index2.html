@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta title="Who Wants to be a Millionaire? - Setup">
+		<title>(Beta) Who Wants to be a Millionaire? - Setup</title>
+		<meta name="description" content="Who Wants to be a Millionaire? Quiz Edition for Desktop. This is the setup screen.">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="functions.js"></script>
+		<script>
+			
+			function onload(){
+				sessionStorage.setItem("footertext2", "Coding and graphics by Samuel Kitson - Music from the TV show - Questions from various sources - Last modified on "+String(document.lastModified)+" - ");
+				document.getElementById("footer").innerHTML = sessionStorage.getItem("footertext2")+"331 lines of code";
+				localStorage.setItem("status", "idle");
+				if (window.innerWidth > window.innerHeight*(3/2)) {
+					document.getElementById("prizestable").style.fontSize = String(window.innerHeight/25);
+				} else {
+					document.getElementById("prizestable").style.fontSize = "3.5vw";
+				};
+				localStorage.setItem('prizes', '{"list": ["£100","£200","£300","£500","£1,000","£2,000","£4,000","£8,000","£16,000","£32,000","£64,000","£125,000","£250,000","£500,000","£1,000,000"]}');
+				fillPrizesTable((JSON.parse(localStorage.getItem("prizes"))).list);
+				fixPrizeHighlight();
+				document.getElementById("questiontext").innerHTML = "Where do you want to go?"
+				//alert("Enter this code on the controller screen: "+code+"\nPress the enter key to continue...");
+			};
+		</script>
+	</head>
+	<body ononline="online()" onoffline="offline()" onload="onload()" id="body">
+		<div id="prizedetails"></div>
+		<div id="audienceresults"></div>
+		<div id="setuphelp">
+			<h3>Welcome to 'Who Wants to be a Millionaire' Quiz Edition</h3>
+			<p>This <u>unoffical</u> game has 100s of questions on a range of topics. The 2 main game modes are explained below:</p>
+			<ul>
+				<li><strong>Practice mode: </strong>also known as single player, this mode is designed for you to test your skills against the computer. All lifelines are fully simulated</li>
+				<li><strong>Quiz mode: </strong>this mode is designed for group quizzes. You need 2 screens to use this mode to its potential - one for the controller and one for the player. The controller must input all lifeline results.</li>
+			</ul>
+		</div>
+		<div id="countdown" onclick="countdown()">30</div>
+		<div id="nosignal">
+			<img id="nosignalimg" src="images/millionaire no signal.png">
+			<p id="nosignaltext">No signal<br>Reconnect to continue</p>
+		</div>
+		<!--<table id="lifelinestable">
+			<tr>
+				<td><img id="lifeline5050" class="lifelineimg" src="images/millionaire 5050.png" onclick="lifeline('5050')"></td>
+				<td><img id="lifelinephone" class="lifelineimg" src="images/millionaire phone.png" onclick="lifeline('phone')"></td>
+				<td><img id="lifelineaudience" class="lifelineimg" src="images/millionaire audience.png" onclick="lifeline('audience')"></td>
+			</tr>
+		</table>-->
+		<table id="questiontable">
+			<tr>
+				<td colspan="2" id="questioncell">
+					<div class="imgcontainer">
+						<img src="images/millionaire large.png" class="tableimg">
+						<div id="questiontext">SETUP SCREEN</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="answer1cell">
+					<div class="imgcontainer">
+						<img onclick="selectans(1)" id="answer1img" src="images/millionaire small left.png" class="tableimg">
+						<div onclick="selectans(1)" class="answertext answertextleft" id="answer1text"></div>
+					</div>
+				</td>
+				<td id="answer2cell">
+					<div class="imgcontainer">
+						<img onclick="selectans(2)" id="answer2img" src="images/millionaire small right.png" class="tableimg">
+						<div onclick="selectans(2)" class="answertext answertextright" id="answer2text"></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="answer3cell">
+					<div class="imgcontainer">
+						<img onclick="selectans(3)" id="answer3img" src="images/millionaire small left.png" class="tableimg">
+						<div onclick="selectans(3)" class="answertext answertextleft" id="answer3text"></div>
+					</div>
+				</td>
+				<td id="answer4cell">
+					<div class="imgcontainer">
+						<img onclick="selectans(4)" id="answer4img" src="images/millionaire small right.png" class="tableimg">
+						<div onclick="selectans(4)" class="answertext answertextright" id="answer4text"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table id="prizestable">
+			<tr>
+				<td><a id="prizes15A" class="prizesA"></a></td>
+				<td><a id="prizes15B" class="prizesB"></a></td>
+				<td><a id="prizes15C" class="prizesC"></a></td>
+			</tr>
+		</table>
+		<p id="footer">Coding and graphics by Samuel Kitson - Music from the TV show - Questions from various sources</p>
+	</body>
+</html>
