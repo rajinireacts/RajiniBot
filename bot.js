@@ -150,7 +150,7 @@ bot.onText(/\/movie (.+)/,function(msg,match){
     var movie = match[1];
     request(`http://www.omdbapi.com/?apikey=aea138e7&t=${movie}`,function(error,response,body){
         if(!error && response.statusCode == 200){
-          bot.sendMessage(chatId, '_Looking for_ ' + movie + '_Details_ ...', {parse_mode:'Markdown'})
+          bot.sendMessage(chatId, '_Looking for_ ' + movie + ' _Details_ ...', {parse_mode:'Markdown'})
           .then(function(msg){
             var res = JSON.parse(body);
             bot.sendPhoto(chatId, res.Poster,{caption: 'Result : \nTitle: ' + res.Title + '\nYear: ' + res.Year + '\nRated: ' + res.Rated + '\nReleased: ' + res.Released});
